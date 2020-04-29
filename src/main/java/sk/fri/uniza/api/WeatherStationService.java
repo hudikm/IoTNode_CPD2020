@@ -23,7 +23,8 @@ public interface WeatherStationService {
             @Query("fields") List<String> fields);
 
 
-    // ... getStationLocations();
+    @GET("/weather/locations")
+    Call<List<Location>> getStationLocations();
 
 
     // ... getCurrentWeather(station);

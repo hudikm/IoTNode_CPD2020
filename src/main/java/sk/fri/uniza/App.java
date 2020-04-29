@@ -2,6 +2,7 @@ package sk.fri.uniza;
 
 import retrofit2.Call;
 import retrofit2.Response;
+import sk.fri.uniza.model.Location;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,6 +30,24 @@ public class App {
             if (response.isSuccessful()) { // Dotaz na server bol neúspešný
                 //Získanie údajov vo forme Mapy stringov
                 Map<String, String> body = response.body();
+                System.out.println(body);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Vytvorenie požiadavky na získanie údajov o všetkých meteo staniciach
+        Call<List<Location>> stationLocations =
+                iotNode.getWeatherStationService().getStationLocations();
+
+        try {
+            Response<List<Location>> response = stationLocations.execute();
+
+            if (response.isSuccessful()) { // Dotaz na server bol neúspešný
+                //Získanie údajov vo forme Zoznam lokacií
+                List<Location> body = response.body();
+
                 System.out.println(body);
             }
 
