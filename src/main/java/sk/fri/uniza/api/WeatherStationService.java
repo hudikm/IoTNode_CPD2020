@@ -27,10 +27,12 @@ public interface WeatherStationService {
     Call<List<Location>> getStationLocations();
 
 
-    // ... getCurrentWeather(station);
+    @GET("/weather/{station}/current")
+    Call<WeatherData> getCurrentWeather(@Path("station") String station);
 
-
-    // ... getCurrentWeather(station, fields);
+    @GET("/weather/{station}/current")
+    Call<WeatherData> getCurrentWeather(@Path("station") String station,
+                                        @Query("fields") List<String> fields);
 
 
     // ... getHistoryWeather(station, from, to);
