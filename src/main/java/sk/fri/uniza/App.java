@@ -1,10 +1,10 @@
 package sk.fri.uniza;
 
 /**
- * Hello world!
+ * Hello IoT!
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
     }
 }
