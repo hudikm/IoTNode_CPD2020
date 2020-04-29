@@ -17,7 +17,9 @@ public class App {
         // meteo stanice s ID: station_1
         Call<Map<String, String>> currentWeather =
                 iotNode.getWeatherStationService()
-                        .getCurrentWeatherAsMap("station_1");
+                        .getCurrentWeatherAsMap("station_1",
+                                List.of("time", "date",
+                                        "airTemperature"));
 
 
         try {

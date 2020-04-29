@@ -17,7 +17,10 @@ public interface WeatherStationService {
             @Path("station") String station);
 
 
-    // ... getCurrentWeatherAsMap(station, fields);
+    @GET("/weather/{station}/current")
+    Call<Map<String, String>> getCurrentWeatherAsMap(
+            @Path("station") String station,
+            @Query("fields") List<String> fields);
 
 
     // ... getStationLocations();
