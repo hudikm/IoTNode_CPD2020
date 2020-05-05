@@ -26,7 +26,7 @@ Na serveri existuje táto URL adresná schéma:
 
 	`GET   /weather/{station}/history`
 	
-- Získanie prístupového tókenu, ktorý je potrebný na prístup k zabezpečeným zdrojom. Prístup k tomuto zdroju je zabezpečený pomocou [Basic autenticikačného mechanizmu](https://en.wikipedia.org/wiki/Basic_access_authentication). Prístupové údaje: `admin:heslo`
+- Získanie prístupového tókenu, ktorý je potrebný na prístup k zabezpečeným zdrojom. Prístup k tomuto zdroju je zabezpečený pomocou [Basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). Prístupové údaje: `admin:heslo`
 
 	`POST /apikey/createjwt`
 	
