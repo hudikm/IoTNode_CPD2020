@@ -106,7 +106,8 @@ nav:
     - Zadanie I: 
       - Zadanie: index.md
       - Postup prác: postup.md
-      - REST Api: RESTapi.md
+      - Dobrovolná úloha: bonus.md
+      - Dokumentácia k REST API: RESTapi.md
     - Teória:
       - Webové služby: web_services.md
       - Maven: maven.md

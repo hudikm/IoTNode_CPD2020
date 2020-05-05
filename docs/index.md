@@ -4,9 +4,9 @@
 
 Cieľom cvičenia je oboznámiť sa s REST rozhraním. Na úvod cvičenia sa musíme oboznámiť s pojmom REST rozhranie a ďalšími termínmi a technológiami, ktoré sa použijú pri vypracovaní tohoto cvičenia( preštudujte sekciu Teória).
 
-Prvá časť úlohy je formou tutoriálu, ktorý má za cieľ oboznámiť vás so základom problematiky návrhu aplikácie s použitím HTTP klienta, JSON formátu na prenos dát a Maven systému na zostavovanie aplikácie. Potom nasledujú úlohy na samostatnú prácu, ktoré treba povinne vypracovať a odovzdať vo forme Git repozitára.  Na záver sú tzv. bonusové úlohy, ktoré niesu povinné ale slúžia na zlepšenie známky.
+Prvá časť úlohy je formou tutoriálu, ktorý má za cieľ oboznámiť vás so základom problematiky návrhu aplikácie s použitím HTTP klienta, JSON formátu na prenos dát a Maven systému na zostavovanie aplikácie. Potom nasledujú úlohy na [samostatnú prácu](/postup/#uloha-na-dopracovanie), ktoré treba povinne vypracovať a odovzdať vo forme Git repozitára.  Na záver je [dobrovoľná úloha](/bonus/#dobrovolna-uloha) a jej vypracovaním si môžete zlepšiť známku.
 
-Úlohou na vypracovanie je vytvoriť základnú klientskú aplikáciu, ktorá bude využívať REST rozhranie na načítanie dát o počasí. Web služba, ktorá poskytuje tieto dáta beží na serveri, ktorý je pripravený tak, že bude bežať na lokálnom počítači a vyvíjaná aplikácia k nemu pristúpi cez lokálne pripojenie. Klientská aplikácia bude využívať [Retrofit](https://square.github.io/retrofit/) čo je vlastne HTTP klient. Prenášané dáta sú vo forme JSON, ktorý bude treba deserializovať na čo sa bude používať [Jackson](https://github.com/FasterXML/jackson) knižnica. 
+Úlohou na vypracovanie je vytvoriť základnú klientskú aplikáciu, ktorá bude využívať REST rozhranie na načítanie dát o počasí. Web služba, ktorá poskytuje tieto dáta beží na serveri, ktorý je pripravený tak, že bude bežať na lokálnom počítači a vyvíjaná aplikácia k nemu pristúpi cez lokálne pripojenie. Klientská aplikácia bude využívať [Retrofit](https://square.github.io/retrofit/), čo je vlastne HTTP klient. Prenášané dáta sú vo forme JSON, ktorý bude treba deserializovať na čo sa bude používať [Jackson](https://github.com/FasterXML/jackson) knižnica. 
 > Ilustrácia úlohy
 > ![](images/zadanie.svg#center)
 
@@ -35,12 +35,12 @@ Na serveri existuje táto URL adresná schéma:
     `GET   /weatherAuth/{station}/current`<br>
     `GET   /weatherAuth/{station}/history`<br>
     
-- Špeciálna adresa na ktorej je umiestnená interaktívna dokumentácia k REST rozhranie pomocou ktorej je možné otestovať jednotlivé URL adresy.
+- Špeciálna adresa na ktorej je umiestnená interaktívna dokumentácia k REST rozhraniu. Táto umožňuje otestovať jednotlivé URL adresy.
 
     `GET   /swagger`
 
 !!! Tip
-	V interaktívnej dokumentácii swagger je možne autentifikácie po kliknutí na tieto ikonky:<br>
+	Na overenie zabezpečených URL adries sa v interaktívnej dokumentácii swagger dá autentifikovať  kliknutí na tieto ikonky:<br>
 	![](images/Screenshot_20200504_122219.png) ![](images/Screenshot_20200504_122244.png)
 
 ### Webová služba vo vnútri Docker kontajnera
@@ -49,17 +49,18 @@ Samotná webová služba je napísaná v Java jazyku s využitím Dropwizzard fr
 
 #### Inštalácia Docker
 
-	- [Windows](https://docs.docker.com/docker-for-windows/install/)
-	- [Linux](https://docs.docker.com/engine/install/#server)
-	- [Mac](https://docs.docker.com/docker-for-mac/install/)
+- [Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Linux](https://docs.docker.com/engine/install/#server)
+- [Mac](https://docs.docker.com/docker-for-mac/install/)
 
 ### Stiahnutie obrazu webovej služby
-
+V príkazovom riadku zadajte:
 ```bash
 docker pull hudikm/dropwizard-weathers
 ```
 
 ### Spustenie služby
+V príkazovom riadku zadajte:
 
 `docker run  -e TZ='Europe/Bratislava' -it -p 9000:8080 -p 9001:8081 hudikm/dropwizard-weatherstation`
 

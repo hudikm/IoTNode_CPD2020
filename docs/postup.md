@@ -1,10 +1,26 @@
-## Vytvorenie git repozitára pomocou templatu
+## Úvodné kroky
+
+### Vytvorenie klonu git repozitára pomocou šablóny
+
+Na adrese [`https://github.com/hudikm/CPD_2020_IoTNodeUloha_1`](https://github.com/hudikm/CPD_2020_IoTNodeUloha_1)  sa nachádza šablóna projektu. Vytvorte si vo svojom GitHub učte kópiou projektu.
+
+ ![](images/screenshot.png) 
 
 [En. návod](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 
-## Klonovanie projektu
+### Stiahnite naklonovaný projekt z vášho GitHub-u
 
-Skúška 
+![](images/Screenshot_20200504_145429.png#center)
+
+![](images/Screenshot_20200503_200055.png#center)
+
+![](images/Screenshot_20200504_145548.png#center)
+
+### Spojazdnenie projektu
+
+V projekte sa nachádzajú unit testy, ktoré ale bez úplného aplikačného kódu nejdú skompilovať a treba ich dočasne odstrániť z kompilačného procesu.
+
+![](images/Screenshot_20200504_145712.png#center)
 
 ## Postup prác
 
@@ -27,7 +43,7 @@ src
 │              ├─ NoAuth
 │              │  └─ WeatherStationTest.java	 # Unit testy pre prvú časť úlohy
 │              └─ Auth
-│                 └─ WeatherStationAuthTest.java # Unit testy pre bonusovú časť
+│                 └─ WeatherStationAuthTest.java # Unit testy pre dobrovolnú časť
 └─ main
    └─ java
       └─ sk
@@ -48,9 +64,10 @@ src
 
 <!--tgen step=1.0 template='mkdocs_header_only' -->
 #### 1.0 Importovanie knižnice Retrofit [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/12609459536f00532cd5a8b1f2b59fe5e1dd55b4/)
+
 <!--end-->
 
-Ako prvé do projektu musíme pridať [Retrofit](https://square.github.io/retrofit/) knižnicu na to využijeme systém Maven. Do súbor `pom.xml` pridáme nasledujúce závislosti. 
+Ako prvé do projektu musíme pridať [Retrofit](https://square.github.io/retrofit/) knižnicu a na to využijeme systém Maven. V súbor `pom.xml` v časti ` <dependencies> </dependencies>` pridáme nasledujúce závislosti. 
 
 <!--tgen step=1.0 template='mkdocs_body_only' noupdate -->
 
@@ -88,17 +105,21 @@ Ako prvé do projektu musíme pridať [Retrofit](https://square.github.io/retrof
 
 ```
 
-
 <!--end-->
+
+Po vložený týchto riadkov sa v hornom pravom rohu zobrazí ikonka, ktorú treba stlačiť: 
+
+ ![](images/Screenshot_20200504_193203.png#center)
 
 
 <!--tgen step=1.1 template='mkdocs_header_only'  -->
 #### 1.1 Vytvorenie rozhrania pre službu WeatherStation [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/a4f6c7a4048ba65376826d0a30d4991424f9c2ec/)
+
 <!--end-->
 
 Práca z [Retrofit](https://square.github.io/retrofit/) knižnicou je veľmi jednoduchá. Tento nástroj pomocou anotácií mení HTTP API na jednoduché Java rozhranie (`interface`).  Anotácie `@GET(<url>), @POST(<url>), @DELETE(<url>), ...` definujú HTTP metódu, ktorá zodpovedá danému HTTP zdroju. 
 
- Anotované vstupné parametre metódy zase definujú parametre URL dresy. V nižšie uvedenom príklade pomocou anotácie `@Path(<názov premennej v URL>)` definujeme ID meteo stanice. Zavolaním metódy`getCurrentWeatherAsMap("station_1")` sa vygeneruje nasledovná URL adresa`/weather/station_1/current`. 
+ Anotované vstupné parametre metódy zase definujú parametre URL dresy. V nižšie uvedenom príklade pomocou anotácie `@Path(<názov premennej v URL>)` definujeme ID meteo-stanice. Zavolaním metódy`getCurrentWeatherAsMap("station_1")` sa vygeneruje nasledovná URL adresa`/weather/station_1/current`. 
 
 Výstupné parametre metódy musia korešpondovať s formou prenášaných dát danej URL adresy. V tomto prípade vieme, že dáta sú v tvare JSON a daná url adresa vracia nasledujúce dáta: 
 
@@ -134,8 +155,6 @@ Vidíme, že JSON dáta sú zapísané v tvare dvojíc *kľúč -> dáta* a pret
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/a4f6c7a4048ba65376826d0a30d4991424f9c2ec/src/main/java/sk/fri/uniza/api/WeatherStationService.java) src/main/java/sk/fri/uniza/api/WeatherStationService.java**
 
- > import java.util.Map;
-
 ``` java tab="Nové" hl_lines="3 4 5"
 public interface WeatherStationService {
 
@@ -169,8 +188,6 @@ public interface WeatherStationService {
 <!--tgen step=1.2 template='mkdocs_body_only'  -->
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/92b028b6ecd69e3f580581c7b3338e81c14f81f4/src/main/java/sk/fri/uniza/IotNode.java) src/main/java/sk/fri/uniza/IotNode.java**
-
- > import retrofit2.converter.jackson.JacksonConverterFactory;
 
 ``` java tab="Nové" hl_lines="4 5 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"
 import sk.fri.uniza.api.WeatherStationService;
@@ -279,7 +296,7 @@ public class App {
 
 <!--end-->
 
-Po odoslaní požiadavky, čakáme na odpoveď, ktorá príde vo forme `Response` objektu. Obdržaním daného objektu nieje automaticky zaručené, že komunikácia prebehla úspešne. Na určenie či všetko prebehlo v poriadku treba skontrolovať hodnotu metódy `response.isSuccessful()`.  Ak sa vráti hodnota `false` chybové oznámenie sa nachádza v `response.errorBody()` v opačnom prípade prijaté dáta sa získajú cez `response.body()`.
+Po odoslaní požiadavky, čakáme na odpoveď, ktorá príde vo forme `Response` objektu. Obdržaním daného objektu nie je automaticky zaručené, že komunikácia prebehla úspešne. Na určenie či všetko prebehlo v poriadku treba skontrolovať hodnotu metódy `response.isSuccessful()`.  Ak sa vráti hodnota `false` chybové oznámenie sa nachádza v `response.errorBody()` v opačnom prípade prijaté dáta sa získajú cez `response.body()`.
 
 <!--tgen step=1.3.b template='mkdocs_body_only'  -->
 
@@ -344,11 +361,18 @@ import java.util.Map;
 
 ```
 
-
 <!--end-->
+
+**Výstup  programu:**
+
+```
+{Date=04.05.2020, Time=19:51, Air Temperature=6.91}
+```
+
 
 
 <!--tgen step=1.4 template='mkdocs_header_only'  -->
+
 #### 1.4 Upresnenie požiadavky o aké údaje máme záujem [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/e749d4cc97dc6130c140170e1c98600accbd56a5/)
 <!--end-->
 
@@ -487,8 +511,6 @@ V tomto prípade vidíme, že sa nám odosiela viacero objektov naraz. Je to zoz
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/bde33cde9e725c9d3e4ad442190595c4b5799a91/src/main/java/sk/fri/uniza/App.java) src/main/java/sk/fri/uniza/App.java**
 
- > package sk.fri.uniza;
-
 ``` java tab="Nové" hl_lines="3"
 import retrofit2.Call;
 import retrofit2.Response;
@@ -553,15 +575,13 @@ import java.util.List;
 <!--tgen step=1.5.b template='mkdocs_header_only'  -->
 #### 1.5.b Úpráva java triedy Location [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/a2c693bb55d6f789f71cd1081d83f0782731d9cf/)
 
-V predchádzajúcom častiach sme používali generické výstupné premenné typu `Map<String,String>`, ktoré sú jednoduché na použitie ale pre ďalšiu prácu už niesu moc praktické. V praxi sa používajú konkrétne navrhnuté dátové triedy, ktoré ako celok predstavujú dátový model. V tomto prípade je definovaná trieda `Location`, ktorá využíva `Jackson` anotáciu `@JsonProperty(<názov premennej v JSON formáte>)` na definovanie pravidiel použitých pri konvertovaní dát medzi JSON a Java triedou. Táto anotácie nieje vždy nutná a ani v tomto príklade by sa nemusela použiť, lebo názvy Java premenných zodpovedajú názvu JSON premenných a je dodržaná [JavaBeans](https://www.tutorialspoint.com/jsp/jsp_java_beans.htm) notácia. 
+V predchádzajúcom častiach sme používali generické výstupné premenné typu `Map<String,String>`, ktoré sú jednoduché na použitie ale pre ďalšiu prácu už niesu moc praktické. V praxi sa používajú konkrétne navrhnuté dátové triedy, ktoré ako celok predstavujú dátový model. V tomto prípade je definovaná trieda `Location`, ktorá využíva `Jackson` anotáciu `@JsonProperty(<názov premennej v JSON formáte>)` na definovanie pravidiel použitých pri konvertovaní dát medzi JSON a Java triedou. Táto anotácie nie je vždy nutná a ani v tomto príklade by sa nemusela použiť, lebo názvy Java premenných zodpovedajú názvu JSON premenných a je dodržaná [JavaBeans](https://www.tutorialspoint.com/jsp/jsp_java_beans.htm) notácia. 
 
 <!--end-->
 
 <!--tgen step=1.5.b template='mkdocs_body_only'  -->
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/a2c693bb55d6f789f71cd1081d83f0782731d9cf/src/main/java/sk/fri/uniza/model/Location.java) src/main/java/sk/fri/uniza/model/Location.java**
-
- > package sk.fri.uniza.model;
 
 ``` java tab="Nové" hl_lines="4 5 6 7 8 9 10 11 12 13 15 16 17 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64"
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -645,16 +665,57 @@ public class Location {
 
 <!--end-->
 
+**Výstup  programu:**
+
+```
+[Location{id='station_1', country='Slovakia', address='Veľká okružná', town='Žilna', gps='49.219715, 18.744436'}, Location{id='station_2', country='Slovakia', address='Predmestská', town='Žilna', gps='49.2200445,18.7447796'}, Location{id='station_3', country='Slovakia', address='1. mája', town='Žilna', gps='49.2219346,18.7441314'}]
+
+```
+
+
 
 <!--tgen step=1.6.a template='mkdocs_header_only'  -->
-#### 1.6.a Nahradenie všeobecnej Map<String, String> triedou WeatherData [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/)
+
+#### 1.6.a Nahradenie všeobecnej Map <String, String\> triedou WeatherData [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/)
+
 <!--end-->
 
 <!--tgen step=1.6.a template='mkdocs_body_only'  -->
+>  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/src/main/java/sk/fri/uniza/api/WeatherStationService.java) src/main/java/sk/fri/uniza/api/WeatherStationService.java**
+
+ > public interface WeatherStationService {
+
+``` java tab="Nové" hl_lines="4 5 7 8 9"
+    Call<List<Location>> getStationLocations();
+
+
+    @GET("/weather/{station}/current")
+    Call<WeatherData> getCurrentWeather(@Path("station") String station);
+
+    @GET("/weather/{station}/current")
+    Call<WeatherData> getCurrentWeather(@Path("station") String station,
+                                        @Query("fields") List<String> fields);
+
+
+    // ... getHistoryWeather(station, from, to);
+
+```
+
+``` java tab="Pred úpravou" hl_lines="4 5 7"
+    Call<List<Location>> getStationLocations();
+
+
+    // ... getCurrentWeather(station);
+
+
+    // ... getCurrentWeather(station, fields);
+
+
+    // ... getHistoryWeather(station, from, to);
+
+```
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/src/main/java/sk/fri/uniza/App.java) src/main/java/sk/fri/uniza/App.java**
-
- > package sk.fri.uniza;
 
 ``` java tab="Nové" hl_lines="4"
 import retrofit2.Call;
@@ -717,53 +778,17 @@ import java.util.List;
 
 ```
 
->  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/src/main/java/sk/fri/uniza/api/WeatherStationService.java) src/main/java/sk/fri/uniza/api/WeatherStationService.java**
-
- > public interface WeatherStationService {
-
-``` java tab="Nové" hl_lines="4 5 7 8 9"
-    Call<List<Location>> getStationLocations();
-
-
-    @GET("/weather/{station}/current")
-    Call<WeatherData> getCurrentWeather(@Path("station") String station);
-
-    @GET("/weather/{station}/current")
-    Call<WeatherData> getCurrentWeather(@Path("station") String station,
-                                        @Query("fields") List<String> fields);
-
-
-    // ... getHistoryWeather(station, from, to);
-
-```
-
-``` java tab="Pred úpravou" hl_lines="4 5 7"
-    Call<List<Location>> getStationLocations();
-
-
-    // ... getCurrentWeather(station);
-
-
-    // ... getCurrentWeather(station, fields);
-
-
-    // ... getHistoryWeather(station, from, to);
-
-```
-
-
 <!--end-->
-
 
 <!--tgen step=1.6.b template='mkdocs_header_only'  -->
+
 #### 1.6.b Nahradenie všeobecnej Map<String, String> triedou WeatherData [:link:](https://github.com/hudikm/IoTNode_CPD2020/commit/e405986688b4a6cf7315d2d990244a5435ca31be/)
+
 <!--end-->
 
-<!--tgen step=1.6.b template='mkdocs_body_only'  -->
+<!--tgen step=1.6.b template='mkdocs_body_only' noupdate  -->
 
 >  **[🖹](https://github.com/hudikm/IoTNode_CPD2020/blob/e405986688b4a6cf7315d2d990244a5435ca31be/src/main/java/sk/fri/uniza/model/WeatherData.java) src/main/java/sk/fri/uniza/model/WeatherData.java**
-
- > import com.fasterxml.jackson.annotation.JsonProperty;
 
 ``` java tab="Nové" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263"
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -1045,10 +1070,35 @@ public class WeatherData {
 
 ```
 
+**Výstup programu**
+
+```
+sk.fri.uniza.model.WeatherData@2de23121[stationName=station_1,date=04.05.2020,time=19:51,airTemperature=6.91,wetBulbTemperature=5.36,humidity=78,rainIntensity=0,intervalRain=0,totalRain=32,precipitationType=0,windDirection=5,windSpeed=6.59,maximumWindSpeed=10.39,barometricPressure=961.53,solarRadiation=27,heading=343,batteryLife=10,measurementTimestampLabel=05/04/2016 7:00 PM]
+```
+
+
+
+!!! tip
+	Ručne vytvárať triedy podobné `WeatherData` je veľmi náročné a ľahko sa môže vniesť chyba do kódu pri prepisovaní názvov JSON premenných. Našťastie, existujú generátory Java tried, ktoré vedia z JSON súboru alebo JSON schémy vygenerovať požadovanú triedu. Trieda `WeatherData` bola vygenerovaná pomocou online nástroja [jsonschema2pojo](http://www.jsonschema2pojo.org/). Vyskúšajte čo tento nástroj dokáže.   
+<!--end-->
 
 <!--end-->
 
+## Úloha na dopracovanie
+
+- Na dokončenie základnej funkcionality HTTP api klienta treba dorobiť dve metódy, ktoré slúžia na načítanie historických dát o počasí. 
+
+```java
+public interface WeatherStationService {    
+    // ... getHistoryWeather(station, from, to);
+    // ... getHistoryWeather(station, from, to, fields);
+}
+```
+
+!!! note "Unit testy"
+	Pre testovanie správnej funkcionality HTTP klienta, môžete povoliť kompiláciu unit testu `NoAuth` a spustiť daný test.
+
+- Keď budú tieto dve metódy hotové dorobte v triede `IotNode` funkciu `#!java double getAverageTemperature(String station,String  from, String to)`, ktorá vráti priemernú  vonkajšiu teplotu za zadané obdobie.
 
 
 
-<!--end-->
