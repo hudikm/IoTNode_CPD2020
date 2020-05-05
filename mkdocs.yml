@@ -6,8 +6,8 @@ site_description: >-
   Cvičenie k predmetu CPD
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: ""
+repo_name: CPD2020
+repo_url: "https://github.com/hudikm/IoTNode_CPD2020.git"
 edit_uri: ""
 
 # Copyright
@@ -17,12 +17,13 @@ copyright: Copyright &copy; 2016 - 2020 Martin Húdik
 theme:
   name: material
   
+  
   # Don't include MkDocs' JavaScript
-  include_search_page: false
+  include_search_page: true
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: sk
+  language: en
   features:
     - tabs
     #- instant
@@ -38,7 +39,10 @@ theme:
 
 # Plugins
 plugins:
-    - search
+    - search:
+        lang:
+          - en
+        prebuild_index: true
     - minify:
         minify_html: true
     - build_plantuml:
@@ -114,3 +118,7 @@ nav:
       - GIT:
         - Popis: git.md
         - Použitie v InteliJ: intelij_git.md 
+
+google_analytics:
+  - UA-165560005-1
+  - auto
