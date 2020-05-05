@@ -4,7 +4,7 @@
 
 Cieľom cvičenia je oboznámiť sa s REST rozhraním. Na úvod cvičenia sa musíme oboznámiť s pojmom REST rozhranie a ďalšími termínmi a technológiami, ktoré sa použijú pri vypracovaní tohoto cvičenia( preštudujte sekciu Teória).
 
-Prvá časť úlohy je formou tutoriálu, ktorý má za cieľ oboznámiť vás so základom problematiky návrhu aplikácie s použitím HTTP klienta, JSON formátu na prenos dát a Maven systému na zostavovanie aplikácie. Potom nasledujú úlohy na [samostatnú prácu](/postup/#uloha-na-dopracovanie), ktoré treba povinne vypracovať a odovzdať vo forme Git repozitára.  Na záver je [dobrovoľná úloha](/bonus/#dobrovolna-uloha) a jej vypracovaním si môžete zlepšiť známku.
+Prvá časť úlohy je formou tutoriálu, ktorý má za cieľ oboznámiť vás so základom problematiky návrhu aplikácie s použitím HTTP klienta, JSON formátu na prenos dát a Maven systému na zostavovanie aplikácie. Potom nasledujú úlohy na [samostatnú prácu](./postup/#uloha-na-dopracovanie), ktoré treba **povinne vypracovať a odovzdať** vo forme Git repozitára.  Na záver je [dobrovoľná úloha](./bonus/#dobrovolna-uloha) a jej vypracovaním si môžete zlepšiť známku.
 
 Úlohou na vypracovanie je vytvoriť základnú klientskú aplikáciu, ktorá bude využívať REST rozhranie na načítanie dát o počasí. Web služba, ktorá poskytuje tieto dáta beží na serveri, ktorý je pripravený tak, že bude bežať na lokálnom počítači a vyvíjaná aplikácia k nemu pristúpi cez lokálne pripojenie. Klientská aplikácia bude využívať [Retrofit](https://square.github.io/retrofit/), čo je vlastne HTTP klient. Prenášané dáta sú vo forme JSON, ktorý bude treba deserializovať na čo sa bude používať [Jackson](https://github.com/FasterXML/jackson) knižnica. 
 > Ilustrácia úlohy

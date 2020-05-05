@@ -44,7 +44,7 @@ Pre vypracovanie je potrebné naštudovať dokumentáciu k [Retrofit](https://sq
     `GET /weatherAuth/{station}/current`
     `GET /weatherAuth/{station}/history`
 
-- Podrobnejšie informácie nájdete v sekcii [REST dokumentácie](/RESTapi/) alebo v interaktívnej swagger dokumentácii, ktorá je súčasťou *WeatherStation* služby `http://localhost:9000/swagger`.  
+- Podrobnejšie informácie nájdete v sekcii [REST dokumentácie](./RESTapi/) alebo v interaktívnej swagger dokumentácii, ktorá je súčasťou *WeatherStation* služby `http://localhost:9000/swagger`.  
 
 ### Čo je autentifikácia?
 
