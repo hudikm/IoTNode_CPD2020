@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="751px" preserveAspectRatio="none" style="width:906px;height:751px;" version="1.1" viewBox="0 0 906 751" width="906px" zoomAndPan="magnify"><defs/><g><line style="stroke: #EEEEEE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="142.5" x2="142.5" y1="39.9688" y2="704.2813"/><line style="stroke: #EEEEEE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="302" x2="302" y1="47.9688" y2="704.2813"/><rect fill="#1A618C" height="428.5" style="stroke: #EEEEEE; stroke-width: 1.0;" width="10" x="297" y="257.7813"/><line style="stroke: #EEEEEE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="461" x2="461" y1="170.875" y2="704.2813"/><rect fill="#1A618C" height="50.9375" style="stroke: #EEEEEE; stroke-width: 1.0;" width="10" x="456" y="198.8438"/><rect fill="#1A618C" height="41.9375" style="stroke: #EEEEEE; stroke-width: 1.0;" width="10" x="456" y="468.5625"/><line style="stroke: #EEEEEE; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="698" x2="698" y1="84.9375" y2="704.2813"/><rect fill="#1A618C" height="107.9063" style="stroke: #EEEEEE; stroke-width: 1.0;" width="10" x="693" y="90.9375"/><rect fill="#1A618C" height="76.9375" style="stroke: #EEEEEE; stroke-width: 1.0;" width="10" x="693" y="383.625"/><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="142" x="71.5" y="3"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="82.5" y="25.1387">Vzdialený repozitár</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="142" x="71.5" y="704.2813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="82.5" y="726.4199">Vzdialený repozitár</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="129" x="237.5" y="704.2813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107" x="248.5" y="726.4199">Lokálny repozitár</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="92" x="415" y="704.2813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="426" y="726.4199">Stage area</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="132" x="632" y="704.2813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="110" x="643" y="726.4199">Pracovný adresár</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="129" x="237.5" y="47.9688"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="107" x="248.5" y="70.1074">Lokálny repozitár</text><polygon fill="#EEEEEE" points="225.5,71.9375,235.5,75.9375,225.5,79.9375,229.5,75.9375" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="142.5" x2="231.5" y1="75.9375" y2="75.9375"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="63" x="153.5" y="67.1074">git clone</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="132" x="627" y="84.9375"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="110" x="638" y="107.0762">Pracovný adresár</text><polygon fill="#EEEEEE" points="615,86.9375,625,90.9375,615,94.9375,619,90.9375" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="302" x2="621" y1="90.9375" y2="90.9375"/><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="703" x2="745" y1="149.875" y2="149.875"/><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="745" x2="745" y1="149.875" y2="162.875"/><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="704" x2="745" y1="162.875" y2="162.875"/><polygon fill="#EEEEEE" points="714,158.875,704,162.875,714,166.875,710,162.875" style="stroke: #EEEEEE; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="180" x="714" y="141.0449">Vývoj novej funkcionality</text><rect fill="#1A618C" height="35.9688" rx="2" ry="2" style="stroke: #EEEEEE; stroke-width: 3.0;" width="92" x="420" y="170.875"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="431" y="193.0137">Stage area</text><polygon fill="#EEEEEE" points="523,194.8438,513,198.8438,523,202.8438,519,198.8438" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="517" x2="692" y1="198.8438" y2="198.8438"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="533" y="190.0137">git add example.java</text><polygon fill="#EEEEEE" points="313,245.7813,303,249.7813,313,253.7813,309,249.7813" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="307" x2="455" y1="249.7813" y2="249.7813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="323" y="226.9824">git commit -m</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="122" x="323" y="240.9512">"Funkcia hotová"</text><path d="M312,264.7813 L312,319.7813 A2,2 0 0 0 314,321.7813 L560,321.7813 A2,2 0 0 0 562,319.7813 L562,272.7813 L552,262.7813 L314,262.7813 A2,2 0 0 0 312,264.7813 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M552,262.7813 L552,271.7813 A1,1 0 0 0 553,272.7813 L562,272.7813 L552,262.7813 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="204" x="322" y="282.9199">[master 6f52063] Funkcia hotová</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="177" x="326" y="296.8887">1 file changed, 1 insertion(+)</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="217" x="326" y="310.8574">create mode 100644 example.java</text><path d="M8,334.6875 L8,375.6875 A2,2 0 0 0 10,377.6875 L295,377.6875 A2,2 0 0 0 297,375.6875 L297,342.6875 L287,332.6875 L10,332.6875 A2,2 0 0 0 8,334.6875 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M287,332.6875 L287,341.6875 A1,1 0 0 0 288,342.6875 L297,342.6875 L287,332.6875 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="104" x="18" y="352.8262">História comitov:</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="260" x="18" y="366.7949">6f52063 (HEAD -&gt; master) Funkcia hotová</text><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="703" x2="745" y1="411.5938" y2="411.5938"/><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="745" x2="745" y1="411.5938" y2="424.5938"/><line style="stroke: #EEEEEE; stroke-width: 1.0;" x1="704" x2="745" y1="424.5938" y2="424.5938"/><polygon fill="#EEEEEE" points="714,420.5938,704,424.5938,714,428.5938,710,424.5938" style="stroke: #EEEEEE; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="76" x="714" y="402.7637">Další vývoj</text><polygon fill="#EEEEEE" points="472,456.5625,462,460.5625,472,464.5625,468,460.5625" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="466" x2="692" y1="460.5625" y2="460.5625"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="482" y="451.7324">git add example.java</text><polygon fill="#EEEEEE" points="318,506.5,308,510.5,318,514.5,314,510.5" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="312" x2="455" y1="510.5" y2="510.5"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="328" y="487.7012">git commit -m</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="114" x="328" y="501.6699">"Dalšia funkcia"</text><path d="M312,525.5 L312,580.5 A2,2 0 0 0 314,582.5 L560,582.5 A2,2 0 0 0 562,580.5 L562,533.5 L552,523.5 L314,523.5 A2,2 0 0 0 312,525.5 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M552,523.5 L552,532.5 A1,1 0 0 0 553,533.5 L562,533.5 L552,523.5 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="197" x="322" y="543.6387">[master a5466f1] Dalšia funkcia</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="177" x="326" y="557.6074">1 file changed, 1 insertion(+)</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="217" x="326" y="571.5762">create mode 100644 example.java</text><path d="M15,595.4063 L15,650.4063 A2,2 0 0 0 17,652.4063 L295,652.4063 A2,2 0 0 0 297,650.4063 L297,603.4063 L287,593.4063 L17,593.4063 A2,2 0 0 0 15,595.4063 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M287,593.4063 L287,602.4063 A1,1 0 0 0 288,603.4063 L297,603.4063 L287,593.4063 " fill="#B0C4DE" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="104" x="25" y="613.5449">História comitov:</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="253" x="25" y="627.5137">a5466f1 (HEAD -&gt; master) Dalšia funkcia</text><text fill="#EEEEEE" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146" x="25" y="641.4824">6f52063 Funkcia hotová</text><polygon fill="#EEEEEE" points="153.5,682.2813,143.5,686.2813,153.5,690.2813,149.5,686.2813" style="stroke: #EEEEEE; stroke-width: 1.0;"/><line style="stroke: #EEEEEE; stroke-width: 3.0;" x1="147.5" x2="296" y1="686.2813" y2="686.2813"/><text fill="#EEEEEE" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="59" x="163.5" y="677.4512">git push</text><!--MD5=[af0c1a9c8bbdbcff47cfb3d71356e3bc]
+@startuml
+!pragma teoz true
+
+
+
+skinparam Padding 4
+skinparam RoundCorner 4
+skinparam Shadowing false
+
+skinparam Default {
+  FontColor #EEEEEE
+  FontSize 12
+}
+
+skinparam Arrow {
+  Color #EEEEEE
+  FontColor #EEEEEE
+  FontStyle Bold
+}
+
+skinparam activityDiamond {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+
+skinparam activity {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+
+skinparam package {
+  FontColor #EEEEEE
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+}
+skinparam node {
+  FontColor #EEEEEE
+  BackgroundColor #7a209f
+  BorderColor #EEEEEE
+}
+skinparam component {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+  Style uml2
+}
+
+skinparam database {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+
+skinparam cloud {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+
+skinparam collections {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+skinparam Control {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+skinparam Boundary {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+skinparam Entity {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+skinparam interface {
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  FontColor #EEEEEE
+}
+skinparam SequenceParticipantBorderThickness 3
+skinparam sequence {
+  ParticipantBackgroundColor #1A618C
+  ParticipantBorderColor #EEEEEE
+  ParticipantFontStyle normal
+  ParticipantFontColor #EEEEEE
+  LifeLineBorderColor #EEEEEE
+  LifeLineBackgroundColor #1A618C
+  ArrowColor #EEEEEE
+  ArrowBorderColor #EEEEEE
+  ArrowFontColor #EEEEEE
+  ArrowThickness 3
+  ActorBackgroundColor #1A618C
+  ActorBorderColor #EEEEEE
+  ActorFontColor #EEEEEE
+}
+
+
+skinparam rectangle<<person>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam rectangle<<external_person>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #616768
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam rectangle<<system>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam rectangle<<external_system>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #616768
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam database<<system>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #1A618C
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam database<<external_system>> {
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BackgroundColor #616768
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+
+skinparam rectangle<<boundary>> {
+  Shadowing false
+  StereotypeFontSize 0
+  BackgroundColor #7a209f
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BorderColor #EEEEEE
+  BorderStyle dashed
+  BorderThickness 3
+}
+skinparam rectangle<<container>> {
+  Shadowing false
+  StereotypeFontSize 14
+  BackgroundColor #1A618C
+  StereotypeFontColor #EEEEEE
+  FontColor #EEEEEE
+  BorderColor #EEEEEE
+  BorderThickness 3
+}
+participant ExtGit as "Vzdialený repozitár" order 10
+create LocalGit as "Lokálny repozitár" order 20
+ExtGit -> LocalGit: git clone
+create WDir as "Pracovný adresár" order 40
+LocalGit -> WDir
+activate WDir
+WDir -> WDir:Vývoj novej funkcionality
+create Stage as "Stage area" order 30
+activate Stage
+WDir -> Stage- -: git add example.java
+Stage -> LocalGit- -: git commit -m\n"Funkcia hotová"
+activate LocalGit
+note right of LocalGit #LightSteelBlue
+[master 6f52063] Funkcia hotová
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.java
+end note
+note left of LocalGit #LightSteelBlue
+História comitov:
+6f52063 (HEAD -> master) Funkcia hotová
+end note
+activate WDir
+WDir -> WDir:Další vývoj
+WDir -> Stage- -: git add example.java
+activate Stage
+Stage -> LocalGit- -: git commit -m\n"Dalšia funkcia"
+note right of LocalGit #LightSteelBlue
+[master a5466f1] Dalšia funkcia
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.java
+end note
+note left of LocalGit #LightSteelBlue
+História comitov:
+a5466f1 (HEAD -> master) Dalšia funkcia
+6f52063 Funkcia hotová
+end note
+LocalGit -> ExtGit- -: git push
+@enduml
+
+PlantUML version 1.2020.09beta15(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 14.0.1+7
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

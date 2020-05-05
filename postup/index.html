@@ -1,0 +1,716 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Cvičenie k predmetu CPD"><link href=https://squidfunk.github.io/mkdocs-material/postup/ rel=canonical><meta name=author content="Martin Húdik"><link rel="shortcut icon" href=../assets/favicon.png><meta name=generator content="mkdocs-1.1, mkdocs-material-5.1.5"><title>Postup prác - Cvičenie k predmetu prednos dát</title><link rel=stylesheet href=../assets/stylesheets/main.df84b5fe.min.css><link rel=stylesheet href=../assets/stylesheets/palette.8435c73a.min.css><meta name=theme-color content=#3f51b5><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback"><style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style><link rel=stylesheet href=../stylesheets/extra.css><link rel="preconnect dns-prefetch" href=https://www.google-analytics.com><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-165560005-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script><script async src=https://www.google-analytics.com/analytics.js></script></head> <body dir=ltr data-md-color-primary=indigo data-md-color-accent=indigo> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#uvodne-kroky class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <header class=md-header data-md-component=header> <nav class="md-header-nav md-grid" aria-label=Header> <a href=https://squidfunk.github.io/mkdocs-material/ title="Cvičenie k predmetu prednos dát" class="md-header-nav__button md-logo" aria-label="Cvičenie k predmetu prednos dát"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path fill-opacity=.5 d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path fill-opacity=.25 d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z"/></svg> </a> <label class="md-header-nav__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header-nav__title data-md-component=header-title> <div class=md-header-nav__ellipsis> <span class="md-header-nav__topic md-ellipsis"> Cvičenie k predmetu prednos dát </span> <span class="md-header-nav__topic md-ellipsis"> Postup prác </span> </div> </div> <label class="md-header-nav__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query data-md-state=active> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <button type=reset class="md-search__icon md-icon" aria-label=Clear data-md-component=search-reset tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> <div class=md-header-nav__source> <a href=https://github.com/hudikm/IoTNode_CPD2020.git title="Go to repository" class=md-source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg> </div> <div class=md-source__repository> CPD2020 </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class="md-tabs md-tabs--active" aria-label=Tabs data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=.. class="md-tabs__link md-tabs__link--active"> Úloha </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=https://squidfunk.github.io/mkdocs-material/ title="Cvičenie k predmetu prednos dát" class="md-nav__button md-logo" aria-label="Cvičenie k predmetu prednos dát"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path fill-opacity=.5 d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path fill-opacity=.25 d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z"/></svg> </a> Cvičenie k predmetu prednos dát </label> <div class=md-nav__source> <a href=https://github.com/hudikm/IoTNode_CPD2020.git title="Go to repository" class=md-source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg> </div> <div class=md-source__repository> CPD2020 </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=nav-1 type=checkbox id=nav-1 checked> <label class=md-nav__link for=nav-1> Úloha <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg> </span> </label> <nav class=md-nav aria-label=Úloha data-md-level=1> <label class=md-nav__title for=nav-1> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Úloha </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=nav-1-1 type=checkbox id=nav-1-1 checked> <label class=md-nav__link for=nav-1-1> Zadanie I <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg> </span> </label> <nav class=md-nav aria-label="Zadanie I" data-md-level=2> <label class=md-nav__title for=nav-1-1> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Zadanie I </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=.. title=Zadanie class=md-nav__link> Zadanie </a> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" data-md-toggle=toc type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> Postup prác <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg> </span> </label> <a href=./ title="Postup prác" class="md-nav__link md-nav__link--active"> Postup prác </a> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#uvodne-kroky class=md-nav__link> Úvodné kroky </a> <nav class=md-nav aria-label="Úvodné kroky"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#vytvorenie-klonu-git-repozitara-pomocou-sablony class=md-nav__link> Vytvorenie klonu git repozitára pomocou šablóny </a> </li> <li class=md-nav__item> <a href=#stiahnite-naklonovany-projekt-z-vasho-github-u class=md-nav__link> Stiahnite naklonovaný projekt z vášho GitHub-u </a> </li> <li class=md-nav__item> <a href=#spojazdnenie-projektu class=md-nav__link> Spojazdnenie projektu </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#postup-prac class=md-nav__link> Postup prác </a> <nav class=md-nav aria-label="Postup prác"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#struktura-projektu class=md-nav__link> Štruktúra projektu </a> </li> <li class=md-nav__item> <a href=#10-importovanie-kniznice-retrofit class=md-nav__link> 1.0 Importovanie knižnice Retrofit </a> </li> <li class=md-nav__item> <a href=#11-vytvorenie-rozhrania-pre-sluzbu-weatherstation class=md-nav__link> 1.1 Vytvorenie rozhrania pre službu WeatherStation </a> </li> <li class=md-nav__item> <a href=#12-inicializovanie-retrofit-klienta class=md-nav__link> 1.2 Inicializovanie Retrofit klienta </a> </li> <li class=md-nav__item> <a href=#13-ziskanie-udajov-o-aktualnom-pocasi class=md-nav__link> 1.3 Získanie údajov o aktuálnom počasí </a> <nav class=md-nav aria-label="1.3 Získanie údajov o aktuálnom počasí"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#13a-vytvorenie-poziadavky-na-ziskanie-udajov-o-aktualnom-pocasi class=md-nav__link> 1.3.a Vytvorenie požiadavky na získanie údajov o aktuálnom počasí </a> </li> <li class=md-nav__item> <a href=#13b-odoslanie-poziadavky-a-spracovanie-odpovede class=md-nav__link> 1.3.b Odoslanie požiadavky a spracovanie odpovede </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#14-upresnenie-poziadavky-o-ake-udaje-mame-zaujem class=md-nav__link> 1.4 Upresnenie požiadavky o aké údaje máme záujem </a> </li> <li class=md-nav__item> <a href=#15a-ziskanie-zoznamu-dostupnych-meteorologickych-stanic class=md-nav__link> 1.5.a Získanie zoznamu dostupných meteorologických staníc </a> </li> <li class=md-nav__item> <a href=#15b-uprava-java-triedy-location class=md-nav__link> 1.5.b Úpráva java triedy Location </a> </li> <li class=md-nav__item> <a href=#16a-nahradenie-vseobecnej-map-string-string-triedou-weatherdata class=md-nav__link> 1.6.a Nahradenie všeobecnej Map &lt;String, String> triedou WeatherData </a> </li> <li class=md-nav__item> <a href=#16b-nahradenie-vseobecnej-map-triedou-weatherdata class=md-nav__link> 1.6.b Nahradenie všeobecnej Map triedou WeatherData </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#uloha-na-dopracovanie class=md-nav__link> Úloha na dopracovanie </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../bonus/ title="Dobrovolná úloha" class=md-nav__link> Dobrovolná úloha </a> </li> <li class=md-nav__item> <a href=../RESTapi/ title="Dokumentácia k REST API" class=md-nav__link> Dokumentácia k REST API </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=nav-1-2 type=checkbox id=nav-1-2> <label class=md-nav__link for=nav-1-2> Teória <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg> </span> </label> <nav class=md-nav aria-label=Teória data-md-level=2> <label class=md-nav__title for=nav-1-2> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Teória </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../web_services/ title="Webové služby" class=md-nav__link> Webové služby </a> </li> <li class=md-nav__item> <a href=../maven/ title=Maven class=md-nav__link> Maven </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=nav-1-2-3 type=checkbox id=nav-1-2-3> <label class=md-nav__link for=nav-1-2-3> GIT <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg> </span> </label> <nav class=md-nav aria-label=GIT data-md-level=3> <label class=md-nav__title for=nav-1-2-3> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> GIT </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../git/ title=Popis class=md-nav__link> Popis </a> </li> <li class=md-nav__item> <a href=../intelij_git/ title="Použitie v InteliJ" class=md-nav__link> Použitie v InteliJ </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </span> Table of contents </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=#uvodne-kroky class=md-nav__link> Úvodné kroky </a> <nav class=md-nav aria-label="Úvodné kroky"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#vytvorenie-klonu-git-repozitara-pomocou-sablony class=md-nav__link> Vytvorenie klonu git repozitára pomocou šablóny </a> </li> <li class=md-nav__item> <a href=#stiahnite-naklonovany-projekt-z-vasho-github-u class=md-nav__link> Stiahnite naklonovaný projekt z vášho GitHub-u </a> </li> <li class=md-nav__item> <a href=#spojazdnenie-projektu class=md-nav__link> Spojazdnenie projektu </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#postup-prac class=md-nav__link> Postup prác </a> <nav class=md-nav aria-label="Postup prác"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#struktura-projektu class=md-nav__link> Štruktúra projektu </a> </li> <li class=md-nav__item> <a href=#10-importovanie-kniznice-retrofit class=md-nav__link> 1.0 Importovanie knižnice Retrofit </a> </li> <li class=md-nav__item> <a href=#11-vytvorenie-rozhrania-pre-sluzbu-weatherstation class=md-nav__link> 1.1 Vytvorenie rozhrania pre službu WeatherStation </a> </li> <li class=md-nav__item> <a href=#12-inicializovanie-retrofit-klienta class=md-nav__link> 1.2 Inicializovanie Retrofit klienta </a> </li> <li class=md-nav__item> <a href=#13-ziskanie-udajov-o-aktualnom-pocasi class=md-nav__link> 1.3 Získanie údajov o aktuálnom počasí </a> <nav class=md-nav aria-label="1.3 Získanie údajov o aktuálnom počasí"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#13a-vytvorenie-poziadavky-na-ziskanie-udajov-o-aktualnom-pocasi class=md-nav__link> 1.3.a Vytvorenie požiadavky na získanie údajov o aktuálnom počasí </a> </li> <li class=md-nav__item> <a href=#13b-odoslanie-poziadavky-a-spracovanie-odpovede class=md-nav__link> 1.3.b Odoslanie požiadavky a spracovanie odpovede </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#14-upresnenie-poziadavky-o-ake-udaje-mame-zaujem class=md-nav__link> 1.4 Upresnenie požiadavky o aké údaje máme záujem </a> </li> <li class=md-nav__item> <a href=#15a-ziskanie-zoznamu-dostupnych-meteorologickych-stanic class=md-nav__link> 1.5.a Získanie zoznamu dostupných meteorologických staníc </a> </li> <li class=md-nav__item> <a href=#15b-uprava-java-triedy-location class=md-nav__link> 1.5.b Úpráva java triedy Location </a> </li> <li class=md-nav__item> <a href=#16a-nahradenie-vseobecnej-map-string-string-triedou-weatherdata class=md-nav__link> 1.6.a Nahradenie všeobecnej Map &lt;String, String> triedou WeatherData </a> </li> <li class=md-nav__item> <a href=#16b-nahradenie-vseobecnej-map-triedou-weatherdata class=md-nav__link> 1.6.b Nahradenie všeobecnej Map triedou WeatherData </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#uloha-na-dopracovanie class=md-nav__link> Úloha na dopracovanie </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content> <article class="md-content__inner md-typeset"> <h1>Postup prác</h1> <h2 id=uvodne-kroky>Úvodné kroky<a class=headerlink href=#uvodne-kroky title="Permanent link">&para;</a></h2> <h3 id=vytvorenie-klonu-git-repozitara-pomocou-sablony>Vytvorenie klonu git repozitára pomocou šablóny<a class=headerlink href=#vytvorenie-klonu-git-repozitara-pomocou-sablony title="Permanent link">&para;</a></h3> <p>Na adrese <a href=https://github.com/hudikm/CPD_2020_IoTNodeUloha_1><code>https://github.com/hudikm/CPD_2020_IoTNodeUloha_1</code></a> sa nachádza šablóna projektu. Vytvorte si vo svojom GitHub učte kópiou projektu.</p> <p><img alt src=../images/screenshot.png> </p> <p><a href=https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template>En. návod</a></p> <h3 id=stiahnite-naklonovany-projekt-z-vasho-github-u>Stiahnite naklonovaný projekt z vášho GitHub-u<a class=headerlink href=#stiahnite-naklonovany-projekt-z-vasho-github-u title="Permanent link">&para;</a></h3> <p><img alt src=../images/Screenshot_20200504_145429.png#center></p> <p><img alt src=../images/Screenshot_20200503_200055.png#center></p> <p><img alt src=../images/Screenshot_20200504_145548.png#center></p> <h3 id=spojazdnenie-projektu>Spojazdnenie projektu<a class=headerlink href=#spojazdnenie-projektu title="Permanent link">&para;</a></h3> <p>V projekte sa nachádzajú unit testy, ktoré ale bez úplného aplikačného kódu nejdú skompilovať a treba ich dočasne odstrániť z kompilačného procesu.</p> <p><img alt src=../images/Screenshot_20200504_145712.png#center></p> <h2 id=postup-prac>Postup prác<a class=headerlink href=#postup-prac title="Permanent link">&para;</a></h2> <!--tgen file='/home/martin/IdeaProjects/WeatherStation/IoTNode/out.patch' lang=java tabs t_new="Nové" t_old="Pred úpravou" --> <!--____tgen step=all template='gen_tags_separate_header'  --> <!--tgen step=1.0 template='files_list'  noupdate --> <h4 id=struktura-projektu>Štruktúra projektu<a class=headerlink href=#struktura-projektu title="Permanent link">&para;</a></h4> <div class=highlight><pre><span></span><code>src
+├─ <span class=nb>test</span>
+│  └─ java
+│     └─ sk
+│        └─ fri
+│           └─ uniza
+│              ├─ NoAuth
+│              │  └─ WeatherStationTest.java     <span class=c1># Unit testy pre prvú časť úlohy</span>
+│              └─ Auth
+│                 └─ WeatherStationAuthTest.java <span class=c1># Unit testy pre dobrovolnú časť</span>
+└─ main
+   └─ java
+      └─ sk
+         └─ fri
+            └─ uniza
+               ├─ model <span class=c1># Adresár dátových modelov</span>
+               │  ├─ Location.java       
+               │  ├─ Token.java
+               │  └─ WeatherData.java
+               ├─ api
+               │  └─ WeatherStationService.java <span class=c1># Rozhranie REST api klienta</span>
+               ├─ App.java      <span class=c1># Hlavná trieda</span>
+               └─ IotNode.java  <span class=c1># Implementácia RETROfit klienta</span>
+</code></pre></div> <!--end--> <!--tgen step=1.0 template='mkdocs_header_only' --> <h4 id=10-importovanie-kniznice-retrofit>1.0 Importovanie knižnice Retrofit <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/12609459536f00532cd5a8b1f2b59fe5e1dd55b4/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#10-importovanie-kniznice-retrofit title="Permanent link">&para;</a></h4> <!--end--> <p>Ako prvé do projektu musíme pridať <a href=https://square.github.io/retrofit/ >Retrofit</a> knižnicu a na to využijeme systém Maven. V súbor <code>pom.xml</code> v časti <code>&lt;dependencies&gt; &lt;/dependencies&gt;</code> pridáme nasledujúce závislosti. </p> <!--tgen step=1.0 template='mkdocs_body_only' noupdate --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/12609459536f00532cd5a8b1f2b59fe5e1dd55b4/pom.xml>🖹</a> pom.xml</strong></p> </blockquote> <div class=tabbed-set data-tabs=1:2> <input name=__tabbed_1 type=radio id=__tabbed_1_1 checked=checked><label for=__tabbed_1_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>      <span class=nt>&lt;scope&gt;</span>test<span class=nt>&lt;/scope&gt;</span>
+    <span class=nt>&lt;/dependency&gt;</span>
+
+<span class=hll>    <span class=nt>&lt;dependency&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;groupId&gt;</span>com.squareup.retrofit2<span class=nt>&lt;/groupId&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;artifactId&gt;</span>converter-jackson<span class=nt>&lt;/artifactId&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;version&gt;</span>2.8.1<span class=nt>&lt;/version&gt;</span>
+</span><span class=hll>    <span class=nt>&lt;/dependency&gt;</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nt>&lt;dependency&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;groupId&gt;</span>com.squareup.retrofit2<span class=nt>&lt;/groupId&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;artifactId&gt;</span>retrofit<span class=nt>&lt;/artifactId&gt;</span>
+</span><span class=hll>      <span class=nt>&lt;version&gt;</span>2.8.1<span class=nt>&lt;/version&gt;</span>
+</span><span class=hll>    <span class=nt>&lt;/dependency&gt;</span>
+</span>
+    <span class=nt>&lt;dependency&gt;</span>
+      <span class=nt>&lt;groupId&gt;</span>commons-lang<span class=nt>&lt;/groupId&gt;</span>
+</code></pre></div></div> <input name=__tabbed_1 type=radio id=__tabbed_1_2><label for=__tabbed_1_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>      <span class=o>&lt;</span><span class=n>scope</span><span class=o>&gt;</span><span class=n>test</span><span class=o>&lt;/</span><span class=n>scope</span><span class=o>&gt;</span>
+    <span class=o>&lt;/</span><span class=n>dependency</span><span class=o>&gt;</span>
+
+
+    <span class=o>&lt;</span><span class=n>dependency</span><span class=o>&gt;</span>
+      <span class=o>&lt;</span><span class=n>groupId</span><span class=o>&gt;</span><span class=n>commons</span><span class=o>-</span><span class=n>lang</span><span class=o>&lt;/</span><span class=n>groupId</span><span class=o>&gt;</span>
+</code></pre></div></div> </div> <!--end--> <p>Po vložený týchto riadkov sa v hornom pravom rohu zobrazí ikonka, ktorú treba stlačiť: </p> <p><img alt src=../images/Screenshot_20200504_193203.png#center></p> <!--tgen step=1.1 template='mkdocs_header_only'  --> <h4 id=11-vytvorenie-rozhrania-pre-sluzbu-weatherstation>1.1 Vytvorenie rozhrania pre službu WeatherStation <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/a4f6c7a4048ba65376826d0a30d4991424f9c2ec/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#11-vytvorenie-rozhrania-pre-sluzbu-weatherstation title="Permanent link">&para;</a></h4> <!--end--> <p>Práca z <a href=https://square.github.io/retrofit/ >Retrofit</a> knižnicou je veľmi jednoduchá. Tento nástroj pomocou anotácií mení HTTP API na jednoduché Java rozhranie (<code>interface</code>). Anotácie <code>@GET(&lt;url&gt;), @POST(&lt;url&gt;), @DELETE(&lt;url&gt;), ...</code> definujú HTTP metódu, ktorá zodpovedá danému HTTP zdroju. </p> <p>Anotované vstupné parametre metódy zase definujú parametre URL dresy. V nižšie uvedenom príklade pomocou anotácie <code>@Path(&lt;názov premennej v URL&gt;)</code> definujeme ID meteo-stanice. Zavolaním metódy<code>getCurrentWeatherAsMap("station_1")</code> sa vygeneruje nasledovná URL adresa<code>/weather/station_1/current</code>. </p> <p>Výstupné parametre metódy musia korešpondovať s formou prenášaných dát danej URL adresy. V tomto prípade vieme, že dáta sú v tvare JSON a daná url adresa vracia nasledujúce dáta: </p> <div class=highlight><pre><span></span><code><span class=p>{</span>
+  <span class=nt>&quot;Station Name&quot;</span><span class=p>:</span> <span class=s2>&quot;string&quot;</span><span class=p>,</span>
+  <span class=nt>&quot;Date&quot;</span><span class=p>:</span> <span class=s2>&quot;string&quot;</span><span class=p>,</span>
+  <span class=nt>&quot;Time&quot;</span><span class=p>:</span> <span class=s2>&quot;string&quot;</span><span class=p>,</span>
+  <span class=nt>&quot;Air Temperature&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Wet Bulb Temperature&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Humidity&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Rain Intensity&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Interval Rain&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Total Rain&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Precipitation Type&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Wind Direction&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Wind Speed&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Maximum Wind Speed&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Barometric Pressure&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Solar Radiation&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Heading&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Battery Life&quot;</span><span class=p>:</span> <span class=mi>0</span><span class=p>,</span>
+  <span class=nt>&quot;Measurement Timestamp Label&quot;</span><span class=p>:</span> <span class=s2>&quot;string&quot;</span>
+<span class=p>}</span>
+</code></pre></div> <p>Vidíme, že JSON dáta sú zapísané v tvare dvojíc <em>kľúč -&gt; dáta</em> a preto najjednoduchší spôsob ako dané dáta konvertovať z JSON textovej podoby do Java podoby je použiť <code>Map&lt;String,String&gt;</code> (klúč je String a aj dáta sú String) ako výstupný parameter. Retrofit automaticky konvertuje JSON do Java podoby. Retrofit vyžaduje aby výstupné parametre boli zaobalené do objektu <code>Call&lt;typ&gt;</code>.</p> <div class="admonition note"> <p class=admonition-title>Konvertovanie JSON-JAVA</p> <p>Interne Retrofit na konverziu medzi JSON a Java objektom používa rôzne knižnice, ktoré si užívateľ môže zvoliť. Tieto knižnice dovoľujú používať aj iné formatý ako JSON napr. XML, YAML, atď. My používme <a href=https://github.com/FasterXML/jackson-dataformat-xml>Jackson</a> knižnicu.</p> </div> <!--tgen step=1.1 template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/a4f6c7a4048ba65376826d0a30d4991424f9c2ec/src/main/java/sk/fri/uniza/api/WeatherStationService.java>🖹</a> src/main/java/sk/fri/uniza/api/WeatherStationService.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=2:2> <input name=__tabbed_2 type=radio id=__tabbed_2_1 checked=checked><label for=__tabbed_2_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kd>public</span> <span class=kd>interface</span> <span class=nc>WeatherStationService</span> <span class=p>{</span>
+
+<span class=hll>    <span class=nd>@GET</span><span class=p>(</span><span class=s>&quot;/weather/{station}/current&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=nf>getCurrentWeatherAsMap</span><span class=p>(</span>
+</span><span class=hll>            <span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>);</span>
+</span>
+
+    <span class=c1>// ... getCurrentWeatherAsMap(station, fields);</span>
+</code></pre></div></div> <input name=__tabbed_2 type=radio id=__tabbed_2_2><label for=__tabbed_2_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kd>public</span> <span class=kd>interface</span> <span class=nc>WeatherStationService</span> <span class=p>{</span>
+
+<span class=hll>    <span class=c1>// ... getCurrentWeatherAsMap(station);</span>
+</span>
+
+    <span class=c1>// ... getCurrentWeatherAsMap(station, fields);</span>
+</code></pre></div></div> </div> <!--end--> <!--tgen step=1.2 template='mkdocs_header_only'  --> <h4 id=12-inicializovanie-retrofit-klienta>1.2 Inicializovanie Retrofit klienta <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/92b028b6ecd69e3f580581c7b3338e81c14f81f4/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#12-inicializovanie-retrofit-klienta title="Permanent link">&para;</a></h4> <!--end--> <!--tgen step=1.2 template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/92b028b6ecd69e3f580581c7b3338e81c14f81f4/src/main/java/sk/fri/uniza/IotNode.java>🖹</a> src/main/java/sk/fri/uniza/IotNode.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=3:2> <input name=__tabbed_3 type=radio id=__tabbed_3_1 checked=checked><label for=__tabbed_3_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>sk.fri.uniza.api.WeatherStationService</span><span class=p>;</span>
+
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>IotNode</span> <span class=p>{</span>
+<span class=hll>    <span class=kd>private</span> <span class=kd>final</span> <span class=n>Retrofit</span> <span class=n>retrofit</span><span class=p>;</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=kd>final</span> <span class=n>WeatherStationService</span> <span class=n>weatherStationService</span><span class=p>;</span>
+</span>
+<span class=hll>    <span class=kd>public</span> <span class=nf>IotNode</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>
+</span><span class=hll>        <span class=n>retrofit</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Retrofit</span><span class=p>.</span><span class=na>Builder</span><span class=p>()</span>
+</span><span class=hll>                <span class=c1>// Url adresa kde je umietnená WeatherStation služba</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>baseUrl</span><span class=p>(</span><span class=s>&quot;http://localhost:9000/&quot;</span><span class=p>)</span>
+</span><span class=hll>                <span class=c1>// Na konvertovanie JSON objektu na java POJO použijeme</span>
+</span><span class=hll>                <span class=c1>// Jackson knižnicu</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>addConverterFactory</span><span class=p>(</span><span class=n>JacksonConverterFactory</span><span class=p>.</span><span class=na>create</span><span class=p>())</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>build</span><span class=p>();</span>
+</span><span class=hll>        <span class=c1>// Vytvorenie inštancie komunikačného rozhrania</span>
+</span><span class=hll>        <span class=n>weatherStationService</span> <span class=o>=</span> <span class=n>retrofit</span><span class=p>.</span><span class=na>create</span><span class=p>(</span><span class=n>WeatherStationService</span><span class=p>.</span><span class=na>class</span><span class=p>);</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>WeatherStationService</span> <span class=nf>getWeatherStationService</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>weatherStationService</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_3 type=radio id=__tabbed_3_2><label for=__tabbed_3_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>sk.fri.uniza.api.WeatherStationService</span><span class=p>;</span>
+
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>IotNode</span> <span class=p>{</span>
+
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <h4 id=13-ziskanie-udajov-o-aktualnom-pocasi>1.3 Získanie údajov o aktuálnom počasí<a class=headerlink href=#13-ziskanie-udajov-o-aktualnom-pocasi title="Permanent link">&para;</a></h4> <p>V predchádzajúcom príklade sme si vytvorili jednoduchého HTTP klienta pomocou knižnice Retrofit. V nasledujúcej časti si ukážeme ako sa tento klient používa na získanie dát. Získanie dát prebieha v dvoch krokoch: </p> <ul> <li>V prvom kroku si vytvoríme objekt, ktorý reprezentuje požiadavku na server. Tento objekt <code>Call</code> predstavuje definíciu ako tá požiadavka vyzerá ale samotné odoslanie sa vykonáva v samostatnom kroku. Takto vytvorený objekt sa môže použiť iba raz.</li> <li>V druhom kroku sa požiadavka odošle na server. Retrofit poskytuje dve možnosti odoslanie požiadavky: synchrónne pomocou metódu <code>execute()</code> alebo asynchrónne pomocou metódy <code>enqueue()</code>, ktorá je vykonaná na pomocnom vlákne a odpoveď je odoslaná cez callback metódy. My budeme používať synchrónnu metódu. </li> </ul> <!--tgen step=1.3.a template='mkdocs_header_only' noupdate  --> <h5 id=13a-vytvorenie-poziadavky-na-ziskanie-udajov-o-aktualnom-pocasi>1.3.a Vytvorenie požiadavky na získanie údajov o aktuálnom počasí <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/83496648ea9805d9e304673d7b374614495a2413/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#13a-vytvorenie-poziadavky-na-ziskanie-udajov-o-aktualnom-pocasi title="Permanent link">&para;</a></h5> <!--end--> <!--tgen step=1.3.a template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/83496648ea9805d9e304673d7b374614495a2413/src/main/java/sk/fri/uniza/App.java>🖹</a> src/main/java/sk/fri/uniza/App.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=4:2> <input name=__tabbed_4 type=radio id=__tabbed_4_1 checked=checked><label for=__tabbed_4_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nn>sk.fri.uniza</span><span class=p>;</span>
+
+<span class=hll><span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+</span><span class=hll>
+</span><span class=hll><span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+</span><span class=hll><span class=kn>import</span> <span class=nn>java.util.Map</span><span class=p>;</span>
+</span><span class=hll>
+</span><span class=cm>/**</span>
+<span class=cm> * Hello IoT!</span>
+<span class=cm> */</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>App</span> <span class=p>{</span>
+    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+<span class=hll>        <span class=n>IotNode</span> <span class=n>iotNode</span> <span class=o>=</span> <span class=k>new</span> <span class=n>IotNode</span><span class=p>();</span>
+</span><span class=hll>        <span class=c1>// Vytvorenie požiadavky na získanie údajov o aktuálnom počasí z</span>
+</span><span class=hll>        <span class=c1>// meteo stanice s ID: station_1</span>
+</span><span class=hll>        <span class=n>Call</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=n>currentWeather</span> <span class=o>=</span>
+</span><span class=hll>                <span class=n>iotNode</span><span class=p>.</span><span class=na>getWeatherStationService</span><span class=p>()</span>
+</span><span class=hll>                        <span class=p>.</span><span class=na>getCurrentWeatherAsMap</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>);</span>
+</span><span class=hll>
+</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_4 type=radio id=__tabbed_4_2><label for=__tabbed_4_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nn>sk.fri.uniza</span><span class=p>;</span>
+
+<span class=cm>/**</span>
+<span class=cm> * Hello IoT!</span>
+<span class=cm> */</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>App</span> <span class=p>{</span>
+    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <!--tgen step=1.3.b template='mkdocs_header_only' noupdate  --> <h5 id=13b-odoslanie-poziadavky-a-spracovanie-odpovede>1.3.b Odoslanie požiadavky a spracovanie odpovede <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/a5f5ff03ae4573f4952b9ffb25ae7f215cfbd7b2/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#13b-odoslanie-poziadavky-a-spracovanie-odpovede title="Permanent link">&para;</a></h5> <!--end--> <p>Po odoslaní požiadavky, čakáme na odpoveď, ktorá príde vo forme <code>Response</code> objektu. Obdržaním daného objektu nie je automaticky zaručené, že komunikácia prebehla úspešne. Na určenie či všetko prebehlo v poriadku treba skontrolovať hodnotu metódy <code>response.isSuccessful()</code>. Ak sa vráti hodnota <code>false</code> chybové oznámenie sa nachádza v <code>response.errorBody()</code> v opačnom prípade prijaté dáta sa získajú cez <code>response.body()</code>.</p> <!--tgen step=1.3.b template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/a5f5ff03ae4573f4952b9ffb25ae7f215cfbd7b2/src/main/java/sk/fri/uniza/App.java>🖹</a> src/main/java/sk/fri/uniza/App.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=5:2> <input name=__tabbed_5 type=radio id=__tabbed_5_1 checked=checked><label for=__tabbed_5_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nn>sk.fri.uniza</span><span class=p>;</span>
+
+<span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+<span class=hll><span class=kn>import</span> <span class=nn>retrofit2.Response</span><span class=p>;</span>
+</span>
+<span class=hll><span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=p>;</span>
+</span><span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.Map</span><span class=p>;</span>
+</code></pre></div></div> <input name=__tabbed_5 type=radio id=__tabbed_5_2><label for=__tabbed_5_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>package</span> <span class=nn>sk.fri.uniza</span><span class=p>;</span>
+
+<span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+
+<span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.Map</span><span class=p>;</span>
+</code></pre></div></div> </div> <blockquote> <p>public class App {</p> </blockquote> <div class=tabbed-set data-tabs=6:2> <input name=__tabbed_6 type=radio id=__tabbed_6_1 checked=checked><label for=__tabbed_6_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>                        <span class=p>.</span><span class=na>getCurrentWeatherAsMap</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>);</span>
+
+
+<span class=hll>        <span class=k>try</span> <span class=p>{</span>
+</span><span class=hll>            <span class=c1>// Odoslanie požiadavky na server pomocou REST rozhranie</span>
+</span><span class=hll>            <span class=n>Response</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=n>response</span> <span class=o>=</span> <span class=n>currentWeather</span><span class=p>.</span><span class=na>execute</span><span class=p>();</span>
+</span><span class=hll>
+</span><span class=hll>            <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=na>isSuccessful</span><span class=p>())</span> <span class=p>{</span> <span class=c1>// Dotaz na server bol neúspešný</span>
+</span><span class=hll>                <span class=c1>//Získanie údajov vo forme Mapy stringov</span>
+</span><span class=hll>                <span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;</span> <span class=n>body</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=na>body</span><span class=p>();</span>
+</span><span class=hll>                <span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>body</span><span class=p>);</span>
+</span><span class=hll>            <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>        <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>IOException</span> <span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+</span><span class=hll>        <span class=p>}</span>
+</span><span class=hll>
+</span>    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_6 type=radio id=__tabbed_6_2><label for=__tabbed_6_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>                        <span class=p>.</span><span class=na>getCurrentWeatherAsMap</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>);</span>
+
+
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <p><strong>Výstup programu:</strong></p> <div class=highlight><pre><span></span><code>{Date=04.05.2020, Time=19:51, Air Temperature=6.91}
+</code></pre></div> <!--tgen step=1.4 template='mkdocs_header_only'  --> <h4 id=14-upresnenie-poziadavky-o-ake-udaje-mame-zaujem>1.4 Upresnenie požiadavky o aké údaje máme záujem <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/e749d4cc97dc6130c140170e1c98600accbd56a5/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#14-upresnenie-poziadavky-o-ake-udaje-mame-zaujem title="Permanent link">&para;</a></h4> <!--end--> <p>Ďalšou možnosťou, ktorú webová služba poskytuje je možnosť definovať o aké konkrétne dáta máme záujem. Napríklad, ak nás zaujíma iba teplota vzduch podla dokumentácie vieme, že sa jedná o pole <code>airTemperature</code> a URL adresa požiadavky by vyzerala nasledovne: <code>http://localhost:9000/weather/station_1/current?fields=airTemperature</code>. Výsledné dáta budú vyzerať nejako takto: </p> <div class=highlight><pre><span></span><code><span class=p>{</span>
+  <span class=nt>&quot;Air Temperature&quot;</span><span class=p>:</span> <span class=mf>7.2</span>
+<span class=p>}</span>
+</code></pre></div> <p>Vidíme, že časť <code>?fields=airTemperature</code> nám zabezpečuje filtrovanie obsahu. V našom HTTP api rozhraní si danú funkcionalitu definujeme pomocou anotácie <code>@Query("fields")</code>. Trieda <code>List</code> nám zabezpečí, že filtrov v jednej požiadavke môžeme mať viacej.</p> <!--tgen step=1.4 template='mkdocs_body_only' noupdate  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/e749d4cc97dc6130c140170e1c98600accbd56a5/src/main/java/sk/fri/uniza/api/WeatherStationService.java>🖹</a> src/main/java/sk/fri/uniza/api/WeatherStationService.java</strong></p> <p>public interface WeatherStationService {</p> </blockquote> <div class=tabbed-set data-tabs=7:2> <input name=__tabbed_7 type=radio id=__tabbed_7_1 checked=checked><label for=__tabbed_7_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>);</span>
+
+
+<span class=hll>    <span class=nd>@GET</span><span class=p>(</span><span class=s>&quot;/weather/{station}/current&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=nf>getCurrentWeatherAsMap</span><span class=p>(</span>
+</span><span class=hll>            <span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>,</span>
+</span><span class=hll>            <span class=nd>@Query</span><span class=p>(</span><span class=s>&quot;fields&quot;</span><span class=p>)</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>fields</span><span class=p>);</span>
+</span>
+
+    <span class=c1>// ... getStationLocations();</span>
+</code></pre></div></div> <input name=__tabbed_7 type=radio id=__tabbed_7_2><label for=__tabbed_7_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>);</span>
+
+
+<span class=hll>    <span class=c1>// ... getCurrentWeatherAsMap(station, fields);</span>
+</span>
+
+    <span class=c1>// ... getStationLocations();</span>
+</code></pre></div></div> </div> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/e749d4cc97dc6130c140170e1c98600accbd56a5/src/main/java/sk/fri/uniza/App.java>🖹</a> src/main/java/sk/fri/uniza/App.java</strong></p> <p>public class App {</p> </blockquote> <div class=tabbed-set data-tabs=8:2> <input name=__tabbed_8 type=radio id=__tabbed_8_1 checked=checked><label for=__tabbed_8_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>        <span class=c1>// meteo stanice s ID: station_1</span>
+        <span class=n>Call</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=n>currentWeather</span> <span class=o>=</span>
+                <span class=n>iotNode</span><span class=p>.</span><span class=na>getWeatherStationService</span><span class=p>()</span>
+<span class=hll>                        <span class=p>.</span><span class=na>getCurrentWeatherAsMap</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>,</span>
+</span><span class=hll>                                <span class=n>List</span><span class=p>.</span><span class=na>of</span><span class=p>(</span><span class=s>&quot;time&quot;</span><span class=p>,</span> <span class=s>&quot;date&quot;</span><span class=p>,</span>
+</span><span class=hll>                                        <span class=s>&quot;airTemperature&quot;</span><span class=p>));</span>
+</span>
+
+        <span class=k>try</span> <span class=p>{</span>
+</code></pre></div></div> <input name=__tabbed_8 type=radio id=__tabbed_8_2><label for=__tabbed_8_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>        <span class=c1>// meteo stanice s ID: station_1</span>
+        <span class=n>Call</span><span class=o>&lt;</span><span class=n>Map</span><span class=o>&lt;</span><span class=n>String</span><span class=p>,</span> <span class=n>String</span><span class=o>&gt;&gt;</span> <span class=n>currentWeather</span> <span class=o>=</span>
+                <span class=n>iotNode</span><span class=p>.</span><span class=na>getWeatherStationService</span><span class=p>()</span>
+<span class=hll>                        <span class=p>.</span><span class=na>getCurrentWeatherAsMap</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>);</span>
+</span>
+
+        <span class=k>try</span> <span class=p>{</span>
+</code></pre></div></div> </div> <!--end--> <!--tgen step=1.5.a template='mkdocs_header_only'  --> <h4 id=15a-ziskanie-zoznamu-dostupnych-meteorologickych-stanic>1.5.a Získanie zoznamu dostupných meteorologických staníc <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/bde33cde9e725c9d3e4ad442190595c4b5799a91/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#15a-ziskanie-zoznamu-dostupnych-meteorologickych-stanic title="Permanent link">&para;</a></h4> <p><!--end--> Výstup na adrese <code>http://localhost:9000/weather/locations</code> vyzerá nasledovne: <div class=highlight><pre><span></span><code><span class=p>[</span>
+  <span class=p>{</span>
+    <span class=nt>&quot;id&quot;</span><span class=p>:</span> <span class=s2>&quot;station_1&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;country&quot;</span><span class=p>:</span> <span class=s2>&quot;Slovakia&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;address&quot;</span><span class=p>:</span> <span class=s2>&quot;Veľká okružná&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;town&quot;</span><span class=p>:</span> <span class=s2>&quot;Žilna&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;gps&quot;</span><span class=p>:</span> <span class=s2>&quot;49.219715, 18.744436&quot;</span>
+  <span class=p>},</span>
+  <span class=p>{</span>
+    <span class=nt>&quot;id&quot;</span><span class=p>:</span> <span class=s2>&quot;station_2&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;country&quot;</span><span class=p>:</span> <span class=s2>&quot;Slovakia&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;address&quot;</span><span class=p>:</span> <span class=s2>&quot;Predmestská&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;town&quot;</span><span class=p>:</span> <span class=s2>&quot;Žilna&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;gps&quot;</span><span class=p>:</span> <span class=s2>&quot;49.2200445,18.7447796&quot;</span>
+  <span class=p>},</span>
+  <span class=p>{</span>
+    <span class=nt>&quot;id&quot;</span><span class=p>:</span> <span class=s2>&quot;station_3&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;country&quot;</span><span class=p>:</span> <span class=s2>&quot;Slovakia&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;address&quot;</span><span class=p>:</span> <span class=s2>&quot;1. mája&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;town&quot;</span><span class=p>:</span> <span class=s2>&quot;Žilna&quot;</span><span class=p>,</span>
+    <span class=nt>&quot;gps&quot;</span><span class=p>:</span> <span class=s2>&quot;49.2219346,18.7441314&quot;</span>
+  <span class=p>}</span>
+<span class=p>]</span>
+</code></pre></div> V tomto prípade vidíme, že sa nám odosiela viacero objektov naraz. Je to zoznam dostupných meteorologických staníc. V prípade Retrofit to vyriešime jednoducho tak, že výstupný objekt zabalíme do triedy <code>List</code>. <!--tgen step=1.5.a template='mkdocs_body_only' noupdate  --></p> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/bde33cde9e725c9d3e4ad442190595c4b5799a91/src/main/java/sk/fri/uniza/api/WeatherStationService.java>🖹</a> src/main/java/sk/fri/uniza/api/WeatherStationService.java</strong></p> <p>public interface WeatherStationService {</p> </blockquote> <div class=tabbed-set data-tabs=9:2> <input name=__tabbed_9 type=radio id=__tabbed_9_1 checked=checked><label for=__tabbed_9_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=nd>@Query</span><span class=p>(</span><span class=s>&quot;fields&quot;</span><span class=p>)</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>fields</span><span class=p>);</span>
+
+
+<span class=hll>    <span class=nd>@GET</span><span class=p>(</span><span class=s>&quot;/weather/locations&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;&gt;</span> <span class=nf>getStationLocations</span><span class=p>();</span>
+</span>
+
+    <span class=c1>// ... getCurrentWeather(station);</span>
+</code></pre></div></div> <input name=__tabbed_9 type=radio id=__tabbed_9_2><label for=__tabbed_9_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=nd>@Query</span><span class=p>(</span><span class=s>&quot;fields&quot;</span><span class=p>)</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>fields</span><span class=p>);</span>
+
+
+<span class=hll>    <span class=c1>// ... getStationLocations();</span>
+</span>
+
+    <span class=c1>// ... getCurrentWeather(station);</span>
+</code></pre></div></div> </div> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/bde33cde9e725c9d3e4ad442190595c4b5799a91/src/main/java/sk/fri/uniza/App.java>🖹</a> src/main/java/sk/fri/uniza/App.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=10:2> <input name=__tabbed_10 type=radio id=__tabbed_10_1 checked=checked><label for=__tabbed_10_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>retrofit2.Response</span><span class=p>;</span>
+<span class=hll><span class=kn>import</span> <span class=nn>sk.fri.uniza.model.Location</span><span class=p>;</span>
+</span>
+<span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+</code></pre></div></div> <input name=__tabbed_10 type=radio id=__tabbed_10_2><label for=__tabbed_10_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>retrofit2.Response</span><span class=p>;</span>
+
+<span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+</code></pre></div></div> </div> <blockquote> <p>public class App {</p> </blockquote> <div class=tabbed-set data-tabs=11:2> <input name=__tabbed_11 type=radio id=__tabbed_11_1 checked=checked><label for=__tabbed_11_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+        <span class=p>}</span>
+
+<span class=hll>        <span class=c1>// Vytvorenie požiadavky na získanie údajov o všetkých meteo staniciach</span>
+</span><span class=hll>        <span class=n>Call</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;&gt;</span> <span class=n>stationLocations</span> <span class=o>=</span>
+</span><span class=hll>                <span class=n>iotNode</span><span class=p>.</span><span class=na>getWeatherStationService</span><span class=p>().</span><span class=na>getStationLocations</span><span class=p>();</span>
+</span><span class=hll>
+</span><span class=hll>        <span class=k>try</span> <span class=p>{</span>
+</span><span class=hll>            <span class=n>Response</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;&gt;</span> <span class=n>response</span> <span class=o>=</span> <span class=n>stationLocations</span><span class=p>.</span><span class=na>execute</span><span class=p>();</span>
+</span><span class=hll>
+</span><span class=hll>            <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=na>isSuccessful</span><span class=p>())</span> <span class=p>{</span> <span class=c1>// Dotaz na server bol neúspešný</span>
+</span><span class=hll>                <span class=c1>//Získanie údajov vo forme Zoznam lokacií</span>
+</span><span class=hll>                <span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;</span> <span class=n>body</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=na>body</span><span class=p>();</span>
+</span><span class=hll>
+</span><span class=hll>                <span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>body</span><span class=p>);</span>
+</span><span class=hll>            <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>        <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>IOException</span> <span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+</span><span class=hll>        <span class=p>}</span>
+</span><span class=hll>
+</span>    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_11 type=radio id=__tabbed_11_2><label for=__tabbed_11_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+        <span class=p>}</span>
+
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <!--tgen step=1.5.b template='mkdocs_header_only'  --> <h4 id=15b-uprava-java-triedy-location>1.5.b Úpráva java triedy Location <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/a2c693bb55d6f789f71cd1081d83f0782731d9cf/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#15b-uprava-java-triedy-location title="Permanent link">&para;</a></h4> <p>V predchádzajúcom častiach sme používali generické výstupné premenné typu <code>Map&lt;String,String&gt;</code>, ktoré sú jednoduché na použitie ale pre ďalšiu prácu už niesu moc praktické. V praxi sa používajú konkrétne navrhnuté dátové triedy, ktoré ako celok predstavujú dátový model. V tomto prípade je definovaná trieda <code>Location</code>, ktorá využíva <code>Jackson</code> anotáciu <code>@JsonProperty(&lt;názov premennej v JSON formáte&gt;)</code> na definovanie pravidiel použitých pri konvertovaní dát medzi JSON a Java triedou. Táto anotácie nie je vždy nutná a ani v tomto príklade by sa nemusela použiť, lebo názvy Java premenných zodpovedajú názvu JSON premenných a je dodržaná <a href=https://www.tutorialspoint.com/jsp/jsp_java_beans.htm>JavaBeans</a> notácia. </p> <!--end--> <!--tgen step=1.5.b template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/a2c693bb55d6f789f71cd1081d83f0782731d9cf/src/main/java/sk/fri/uniza/model/Location.java>🖹</a> src/main/java/sk/fri/uniza/model/Location.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=12:2> <input name=__tabbed_12 type=radio id=__tabbed_12_1 checked=checked><label for=__tabbed_12_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>com.fasterxml.jackson.annotation.JsonProperty</span><span class=p>;</span>
+
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>Location</span> <span class=p>{</span>
+<span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;id&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>id</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;country&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>country</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;address&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>address</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;town&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>town</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;gps&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>gps</span><span class=p>;</span>
+</span>
+<span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getId</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>id</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span>
+<span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setId</span><span class=p>(</span><span class=n>String</span> <span class=n>id</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>id</span> <span class=o>=</span> <span class=n>id</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getCountry</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>country</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setCountry</span><span class=p>(</span><span class=n>String</span> <span class=n>country</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>country</span> <span class=o>=</span> <span class=n>country</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getAddress</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>address</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setAddress</span><span class=p>(</span><span class=n>String</span> <span class=n>address</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>address</span> <span class=o>=</span> <span class=n>address</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getTown</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>town</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setTown</span><span class=p>(</span><span class=n>String</span> <span class=n>town</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>town</span> <span class=o>=</span> <span class=n>town</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getGps</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>gps</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setGps</span><span class=p>(</span><span class=n>String</span> <span class=n>gps</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>gps</span> <span class=o>=</span> <span class=n>gps</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@Override</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>toString</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=s>&quot;Location{&quot;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=s>&quot;id=&#39;&quot;</span> <span class=o>+</span> <span class=n>id</span> <span class=o>+</span> <span class=sc>&#39;\&#39;&#39;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=s>&quot;, country=&#39;&quot;</span> <span class=o>+</span> <span class=n>country</span> <span class=o>+</span> <span class=sc>&#39;\&#39;&#39;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=s>&quot;, address=&#39;&quot;</span> <span class=o>+</span> <span class=n>address</span> <span class=o>+</span> <span class=sc>&#39;\&#39;&#39;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=s>&quot;, town=&#39;&quot;</span> <span class=o>+</span> <span class=n>town</span> <span class=o>+</span> <span class=sc>&#39;\&#39;&#39;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=s>&quot;, gps=&#39;&quot;</span> <span class=o>+</span> <span class=n>gps</span> <span class=o>+</span> <span class=sc>&#39;\&#39;&#39;</span> <span class=o>+</span>
+</span><span class=hll>                <span class=sc>&#39;}&#39;</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_12 type=radio id=__tabbed_12_2><label for=__tabbed_12_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>com.fasterxml.jackson.annotation.JsonProperty</span><span class=p>;</span>
+
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>Location</span> <span class=p>{</span>
+
+
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <p><strong>Výstup programu:</strong></p> <div class=highlight><pre><span></span><code>[Location{id=&#39;station_1&#39;, country=&#39;Slovakia&#39;, address=&#39;Veľká okružná&#39;, town=&#39;Žilna&#39;, gps=&#39;49.219715, 18.744436&#39;}, Location{id=&#39;station_2&#39;, country=&#39;Slovakia&#39;, address=&#39;Predmestská&#39;, town=&#39;Žilna&#39;, gps=&#39;49.2200445,18.7447796&#39;}, Location{id=&#39;station_3&#39;, country=&#39;Slovakia&#39;, address=&#39;1. mája&#39;, town=&#39;Žilna&#39;, gps=&#39;49.2219346,18.7441314&#39;}]
+</code></pre></div> <!--tgen step=1.6.a template='mkdocs_header_only'  --> <h4 id=16a-nahradenie-vseobecnej-map-string-string-triedou-weatherdata>1.6.a Nahradenie všeobecnej Map &lt;String, String> triedou WeatherData <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#16a-nahradenie-vseobecnej-map-string-string-triedou-weatherdata title="Permanent link">&para;</a></h4> <!--end--> <!--tgen step=1.6.a template='mkdocs_body_only'  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/src/main/java/sk/fri/uniza/api/WeatherStationService.java>🖹</a> src/main/java/sk/fri/uniza/api/WeatherStationService.java</strong></p> <p>public interface WeatherStationService {</p> </blockquote> <div class=tabbed-set data-tabs=13:2> <input name=__tabbed_13 type=radio id=__tabbed_13_1 checked=checked><label for=__tabbed_13_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;&gt;</span> <span class=nf>getStationLocations</span><span class=p>();</span>
+
+
+<span class=hll>    <span class=nd>@GET</span><span class=p>(</span><span class=s>&quot;/weather/{station}/current&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>WeatherData</span><span class=o>&gt;</span> <span class=nf>getCurrentWeather</span><span class=p>(</span><span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>);</span>
+</span>
+<span class=hll>    <span class=nd>@GET</span><span class=p>(</span><span class=s>&quot;/weather/{station}/current&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>WeatherData</span><span class=o>&gt;</span> <span class=nf>getCurrentWeather</span><span class=p>(</span><span class=nd>@Path</span><span class=p>(</span><span class=s>&quot;station&quot;</span><span class=p>)</span> <span class=n>String</span> <span class=n>station</span><span class=p>,</span>
+</span><span class=hll>                                        <span class=nd>@Query</span><span class=p>(</span><span class=s>&quot;fields&quot;</span><span class=p>)</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>fields</span><span class=p>);</span>
+</span>
+
+    <span class=c1>// ... getHistoryWeather(station, from, to);</span>
+</code></pre></div></div> <input name=__tabbed_13 type=radio id=__tabbed_13_2><label for=__tabbed_13_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>    <span class=n>Call</span><span class=o>&lt;</span><span class=n>List</span><span class=o>&lt;</span><span class=n>Location</span><span class=o>&gt;&gt;</span> <span class=nf>getStationLocations</span><span class=p>();</span>
+
+
+<span class=hll>    <span class=c1>// ... getCurrentWeather(station);</span>
+</span><span class=hll>
+</span>
+<span class=hll>    <span class=c1>// ... getCurrentWeather(station, fields);</span>
+</span>
+
+    <span class=c1>// ... getHistoryWeather(station, from, to);</span>
+</code></pre></div></div> </div> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/8fbf1ba78c146bed6c3edf7a59dfe9e2c707aeb0/src/main/java/sk/fri/uniza/App.java>🖹</a> src/main/java/sk/fri/uniza/App.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=14:2> <input name=__tabbed_14 type=radio id=__tabbed_14_1 checked=checked><label for=__tabbed_14_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>retrofit2.Response</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>sk.fri.uniza.model.Location</span><span class=p>;</span>
+<span class=hll><span class=kn>import</span> <span class=nn>sk.fri.uniza.model.WeatherData</span><span class=p>;</span>
+</span>
+<span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+</code></pre></div></div> <input name=__tabbed_14 type=radio id=__tabbed_14_2><label for=__tabbed_14_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>retrofit2.Call</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>retrofit2.Response</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>sk.fri.uniza.model.Location</span><span class=p>;</span>
+
+<span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>java.util.List</span><span class=p>;</span>
+</code></pre></div></div> </div> <blockquote> <p>public class App {</p> </blockquote> <div class=tabbed-set data-tabs=15:2> <input name=__tabbed_15 type=radio id=__tabbed_15_1 checked=checked><label for=__tabbed_15_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+        <span class=p>}</span>
+
+<span class=hll>        <span class=c1>// Vytvorenie požiadavky na získanie údajov o aktuálnom počasí z</span>
+</span><span class=hll>        <span class=c1>// meteo stanice s ID: station_1</span>
+</span><span class=hll>        <span class=n>Call</span><span class=o>&lt;</span><span class=n>WeatherData</span><span class=o>&gt;</span> <span class=n>currentWeatherPojo</span> <span class=o>=</span>
+</span><span class=hll>                <span class=n>iotNode</span><span class=p>.</span><span class=na>getWeatherStationService</span><span class=p>()</span>
+</span><span class=hll>                        <span class=p>.</span><span class=na>getCurrentWeather</span><span class=p>(</span><span class=s>&quot;station_1&quot;</span><span class=p>);</span>
+</span><span class=hll>
+</span><span class=hll>
+</span><span class=hll>        <span class=k>try</span> <span class=p>{</span>
+</span><span class=hll>            <span class=c1>// Odoslanie požiadavky na server pomocou REST rozhranie</span>
+</span><span class=hll>            <span class=n>Response</span><span class=o>&lt;</span><span class=n>WeatherData</span><span class=o>&gt;</span> <span class=n>response</span> <span class=o>=</span> <span class=n>currentWeatherPojo</span><span class=p>.</span><span class=na>execute</span><span class=p>();</span>
+</span><span class=hll>
+</span><span class=hll>            <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=na>isSuccessful</span><span class=p>())</span> <span class=p>{</span> <span class=c1>// Dotaz na server bol neúspešný</span>
+</span><span class=hll>                <span class=c1>//Získanie údajov vo forme inštancie triedy WeatherData</span>
+</span><span class=hll>                <span class=n>WeatherData</span> <span class=n>body</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=na>body</span><span class=p>();</span>
+</span><span class=hll>                <span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>body</span><span class=p>);</span>
+</span><span class=hll>            <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>        <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>IOException</span> <span class=n>e</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+</span><span class=hll>        <span class=p>}</span>
+</span>    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_15 type=radio id=__tabbed_15_2><label for=__tabbed_15_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code>            <span class=n>e</span><span class=p>.</span><span class=na>printStackTrace</span><span class=p>();</span>
+        <span class=p>}</span>
+
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div> </div> <!--end--> <!--tgen step=1.6.b template='mkdocs_header_only'  --> <h4 id=16b-nahradenie-vseobecnej-map-triedou-weatherdata>1.6.b Nahradenie všeobecnej Map<string, string> triedou WeatherData <a href=https://github.com/hudikm/IoTNode_CPD2020/commit/e405986688b4a6cf7315d2d990244a5435ca31be/ ><img alt=🔗 class=twemoji src=https://twemoji.maxcdn.com/v/latest/svg/1f517.svg title=:link:></a><a class=headerlink href=#16b-nahradenie-vseobecnej-map-triedou-weatherdata title="Permanent link">&para;</a></h4> <!--end--> <!--tgen step=1.6.b template='mkdocs_body_only' noupdate  --> <blockquote> <p><strong><a href=https://github.com/hudikm/IoTNode_CPD2020/blob/e405986688b4a6cf7315d2d990244a5435ca31be/src/main/java/sk/fri/uniza/model/WeatherData.java>🖹</a> src/main/java/sk/fri/uniza/model/WeatherData.java</strong></p> </blockquote> <div class=tabbed-set data-tabs=16:2> <input name=__tabbed_16 type=radio id=__tabbed_16_1 checked=checked><label for=__tabbed_16_1>Nové</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>com.fasterxml.jackson.annotation.JsonPropertyOrder</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>org.apache.commons.lang.builder.ToStringBuilder</span><span class=p>;</span>
+
+<span class=hll><span class=nd>@JsonInclude</span><span class=p>(</span><span class=n>JsonInclude</span><span class=p>.</span><span class=na>Include</span><span class=p>.</span><span class=na>NON_NULL</span><span class=p>)</span>
+</span><span class=hll><span class=nd>@JsonPropertyOrder</span><span class=p>({</span>
+</span><span class=hll>        <span class=s>&quot;Station Name&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Date&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Time&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Air Temperature&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Wet Bulb Temperature&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Humidity&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Rain Intensity&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Interval Rain&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Total Rain&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Precipitation Type&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Wind Direction&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Wind Speed&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Maximum Wind Speed&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Barometric Pressure&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Solar Radiation&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Heading&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Battery Life&quot;</span><span class=p>,</span>
+</span><span class=hll>        <span class=s>&quot;Measurement Timestamp Label&quot;</span>
+</span><span class=hll><span class=p>})</span>
+</span><span class=kd>public</span> <span class=kd>class</span> <span class=nc>WeatherData</span> <span class=p>{</span>
+
+<span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Station Name&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>stationName</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Date&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>date</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Time&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>time</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Air Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Double</span> <span class=n>airTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wet Bulb Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Double</span> <span class=n>wetBulbTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Humidity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>humidity</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Rain Intensity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>rainIntensity</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Interval Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>intervalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Total Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>totalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Precipitation Type&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>precipitationType</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Direction&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>windDirection</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Double</span> <span class=n>windSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Maximum Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Double</span> <span class=n>maximumWindSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Barometric Pressure&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Double</span> <span class=n>barometricPressure</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Solar Radiation&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>solarRadiation</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Heading&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>heading</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Battery Life&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>Integer</span> <span class=n>batteryLife</span><span class=p>;</span>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Measurement Timestamp Label&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>private</span> <span class=n>String</span> <span class=n>measurementTimestampLabel</span><span class=p>;</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Station Name&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getStationName</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>stationName</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Station Name&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setStationName</span><span class=p>(</span><span class=n>String</span> <span class=n>stationName</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>stationName</span> <span class=o>=</span> <span class=n>stationName</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Date&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getDate</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>date</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Date&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setDate</span><span class=p>(</span><span class=n>String</span> <span class=n>date</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>date</span> <span class=o>=</span> <span class=n>date</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Time&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getTime</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>time</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Time&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setTime</span><span class=p>(</span><span class=n>String</span> <span class=n>time</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>time</span> <span class=o>=</span> <span class=n>time</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Air Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Double</span> <span class=nf>getAirTemperature</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>airTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Air Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setAirTemperature</span><span class=p>(</span><span class=n>Double</span> <span class=n>airTemperature</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>airTemperature</span> <span class=o>=</span> <span class=n>airTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wet Bulb Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Double</span> <span class=nf>getWetBulbTemperature</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>wetBulbTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wet Bulb Temperature&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setWetBulbTemperature</span><span class=p>(</span><span class=n>Double</span> <span class=n>wetBulbTemperature</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>wetBulbTemperature</span> <span class=o>=</span> <span class=n>wetBulbTemperature</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Humidity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getHumidity</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>humidity</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Humidity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setHumidity</span><span class=p>(</span><span class=n>Integer</span> <span class=n>humidity</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>humidity</span> <span class=o>=</span> <span class=n>humidity</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Rain Intensity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getRainIntensity</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>rainIntensity</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Rain Intensity&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setRainIntensity</span><span class=p>(</span><span class=n>Integer</span> <span class=n>rainIntensity</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>rainIntensity</span> <span class=o>=</span> <span class=n>rainIntensity</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Interval Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getIntervalRain</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>intervalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Interval Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setIntervalRain</span><span class=p>(</span><span class=n>Integer</span> <span class=n>intervalRain</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>intervalRain</span> <span class=o>=</span> <span class=n>intervalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Total Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getTotalRain</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>totalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Total Rain&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setTotalRain</span><span class=p>(</span><span class=n>Integer</span> <span class=n>totalRain</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>totalRain</span> <span class=o>=</span> <span class=n>totalRain</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Precipitation Type&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getPrecipitationType</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>precipitationType</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Precipitation Type&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setPrecipitationType</span><span class=p>(</span><span class=n>Integer</span> <span class=n>precipitationType</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>precipitationType</span> <span class=o>=</span> <span class=n>precipitationType</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Direction&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getWindDirection</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>windDirection</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Direction&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setWindDirection</span><span class=p>(</span><span class=n>Integer</span> <span class=n>windDirection</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>windDirection</span> <span class=o>=</span> <span class=n>windDirection</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Double</span> <span class=nf>getWindSpeed</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>windSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setWindSpeed</span><span class=p>(</span><span class=n>Double</span> <span class=n>windSpeed</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>windSpeed</span> <span class=o>=</span> <span class=n>windSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Maximum Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Double</span> <span class=nf>getMaximumWindSpeed</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>maximumWindSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Maximum Wind Speed&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setMaximumWindSpeed</span><span class=p>(</span><span class=n>Double</span> <span class=n>maximumWindSpeed</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>maximumWindSpeed</span> <span class=o>=</span> <span class=n>maximumWindSpeed</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Barometric Pressure&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Double</span> <span class=nf>getBarometricPressure</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>barometricPressure</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Barometric Pressure&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setBarometricPressure</span><span class=p>(</span><span class=n>Double</span> <span class=n>barometricPressure</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>barometricPressure</span> <span class=o>=</span> <span class=n>barometricPressure</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Solar Radiation&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getSolarRadiation</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>solarRadiation</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Solar Radiation&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setSolarRadiation</span><span class=p>(</span><span class=n>Integer</span> <span class=n>solarRadiation</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>solarRadiation</span> <span class=o>=</span> <span class=n>solarRadiation</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Heading&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getHeading</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>heading</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Heading&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setHeading</span><span class=p>(</span><span class=n>Integer</span> <span class=n>heading</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>heading</span> <span class=o>=</span> <span class=n>heading</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Battery Life&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>Integer</span> <span class=nf>getBatteryLife</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>batteryLife</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Battery Life&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setBatteryLife</span><span class=p>(</span><span class=n>Integer</span> <span class=n>batteryLife</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>batteryLife</span> <span class=o>=</span> <span class=n>batteryLife</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Measurement Timestamp Label&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>getMeasurementTimestampLabel</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=n>measurementTimestampLabel</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@JsonProperty</span><span class=p>(</span><span class=s>&quot;Measurement Timestamp Label&quot;</span><span class=p>)</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>setMeasurementTimestampLabel</span><span class=p>(</span><span class=n>String</span> <span class=n>measurementTimestampLabel</span><span class=p>)</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>this</span><span class=p>.</span><span class=na>measurementTimestampLabel</span> <span class=o>=</span> <span class=n>measurementTimestampLabel</span><span class=p>;</span>
+</span><span class=hll>    <span class=p>}</span>
+</span><span class=hll>
+</span><span class=hll>    <span class=nd>@Override</span>
+</span><span class=hll>    <span class=kd>public</span> <span class=n>String</span> <span class=nf>toString</span><span class=p>()</span> <span class=p>{</span>
+</span><span class=hll>        <span class=k>return</span> <span class=k>new</span> <span class=n>ToStringBuilder</span><span class=p>(</span><span class=k>this</span><span class=p>).</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;stationName&quot;</span><span class=p>,</span> <span class=n>stationName</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;date&quot;</span><span class=p>,</span> <span class=n>date</span><span class=p>).</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;time&quot;</span><span class=p>,</span> <span class=n>time</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;airTemperature&quot;</span><span class=p>,</span> <span class=n>airTemperature</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;wetBulbTemperature&quot;</span><span class=p>,</span> <span class=n>wetBulbTemperature</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;humidity&quot;</span><span class=p>,</span> <span class=n>humidity</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;rainIntensity&quot;</span><span class=p>,</span> <span class=n>rainIntensity</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;intervalRain&quot;</span><span class=p>,</span> <span class=n>intervalRain</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;totalRain&quot;</span><span class=p>,</span> <span class=n>totalRain</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;precipitationType&quot;</span><span class=p>,</span> <span class=n>precipitationType</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;windDirection&quot;</span><span class=p>,</span> <span class=n>windDirection</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;windSpeed&quot;</span><span class=p>,</span> <span class=n>windSpeed</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;maximumWindSpeed&quot;</span><span class=p>,</span> <span class=n>maximumWindSpeed</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;barometricPressure&quot;</span><span class=p>,</span> <span class=n>barometricPressure</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;solarRadiation&quot;</span><span class=p>,</span> <span class=n>solarRadiation</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;heading&quot;</span><span class=p>,</span> <span class=n>heading</span><span class=p>).</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;batteryLife&quot;</span><span class=p>,</span> <span class=n>batteryLife</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>append</span><span class=p>(</span><span class=s>&quot;measurementTimestampLabel&quot;</span><span class=p>,</span> <span class=n>measurementTimestampLabel</span><span class=p>)</span>
+</span><span class=hll>                <span class=p>.</span><span class=na>toString</span><span class=p>();</span>
+</span><span class=hll>    <span class=p>}</span>
+</span>
+<span class=p>}</span>
+</code></pre></div></div> <input name=__tabbed_16 type=radio id=__tabbed_16_2><label for=__tabbed_16_2>Pred úpravou</label><div class=tabbed-content><div class=highlight><pre><span></span><code><span class=kn>import</span> <span class=nn>com.fasterxml.jackson.annotation.JsonPropertyOrder</span><span class=p>;</span>
+<span class=kn>import</span> <span class=nn>org.apache.commons.lang.builder.ToStringBuilder</span><span class=p>;</span>
+
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>WeatherData</span> <span class=p>{</span>
+
+
+<span class=p>}</span>
+</code></pre></div></div> </div> <p><strong>Výstup programu</strong></p> <div class=highlight><pre><span></span><code>sk.fri.uniza.model.WeatherData@2de23121[stationName=station_1,date=04.05.2020,time=19:51,airTemperature=6.91,wetBulbTemperature=5.36,humidity=78,rainIntensity=0,intervalRain=0,totalRain=32,precipitationType=0,windDirection=5,windSpeed=6.59,maximumWindSpeed=10.39,barometricPressure=961.53,solarRadiation=27,heading=343,batteryLife=10,measurementTimestampLabel=05/04/2016 7:00 PM]
+</code></pre></div> <div class="admonition tip"> <p class=admonition-title>Tip</p> <p>Ručne vytvárať triedy podobné <code>WeatherData</code> je veľmi náročné a ľahko sa môže vniesť chyba do kódu pri prepisovaní názvov JSON premenných. Našťastie, existujú generátory Java tried, ktoré vedia z JSON súboru alebo JSON schémy vygenerovať požadovanú triedu. Trieda <code>WeatherData</code> bola vygenerovaná pomocou online nástroja <a href=http://www.jsonschema2pojo.org/ >jsonschema2pojo</a>. Vyskúšajte čo tento nástroj dokáže. </p> </div> <!--end--> <!--end--> <h2 id=uloha-na-dopracovanie>Úloha na dopracovanie<a class=headerlink href=#uloha-na-dopracovanie title="Permanent link">&para;</a></h2> <ul> <li>Na dokončenie základnej funkcionality HTTP api klienta treba dorobiť dve metódy, ktoré slúžia na načítanie historických dát o počasí. </li> </ul> <div class=highlight><pre><span></span><code><span class=kd>public</span> <span class=kd>interface</span> <span class=nc>WeatherStationService</span> <span class=p>{</span>    
+    <span class=c1>// ... getHistoryWeather(station, from, to);</span>
+    <span class=c1>// ... getHistoryWeather(station, from, to, fields);</span>
+<span class=p>}</span>
+</code></pre></div> <div class="admonition note"> <p class=admonition-title>Unit testy</p> <p>Pre testovanie správnej funkcionality HTTP klienta, môžete povoliť kompiláciu unit testu <code>NoAuth</code> a spustiť daný test.</p> </div> <ul> <li>Keď budú tieto dve metódy hotové dorobte v triede <code>IotNode</code> funkciu <code class=highlight><span class=kt>double</span> <span class=nf>getAverageTemperature</span><span class=p>(</span><span class=n>String</span> <span class=n>station</span><span class=p>,</span><span class=n>String</span> <span class=n>from</span><span class=p>,</span> <span class=n>String</span> <span class=n>to</span><span class=p>)</span></code>, ktorá vráti priemernú vonkajšiu teplotu za zadané obdobie.</li> </ul> </article> </div> </div> </main> <footer class=md-footer> <div class=md-footer-nav> <nav class="md-footer-nav__inner md-grid" aria-label=Footer> <a href=.. title=Zadanie class="md-footer-nav__link md-footer-nav__link--prev" rel=prev> <div class="md-footer-nav__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </div> <div class=md-footer-nav__title> <div class=md-ellipsis> <span class=md-footer-nav__direction> Previous </span> Zadanie </div> </div> </a> <a href=../bonus/ title="Dobrovolná úloha" class="md-footer-nav__link md-footer-nav__link--next" rel=next> <div class=md-footer-nav__title> <div class=md-ellipsis> <span class=md-footer-nav__direction> Next </span> Dobrovolná úloha </div> </div> <div class="md-footer-nav__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg> </div> </a> </nav> </div> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-footer-copyright> <div class=md-footer-copyright__highlight> Copyright &copy; 2016 - 2020 Martin Húdik </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> <div class=md-footer-social> <a href=https://github.com/squidfunk target=_blank rel=noopener title=github.com class=md-footer-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> </a> </div> </div> </div> </footer> </div> <script src=../assets/javascripts/vendor.83fe6e3c.min.js></script> <script src=../assets/javascripts/bundle.7e1cb91c.min.js></script><script id=__lang type=application/json>{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script> <script>
+        app = initialize({
+          base: "..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script> </body> </html>
