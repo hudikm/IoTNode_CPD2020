@@ -54,8 +54,11 @@ Samotná webová služba je napísaná v Java jazyku s využitím Dropwizzard fr
 - [Mac](https://docs.docker.com/docker-for-mac/install/)
 
 !!! tip
-	V prípade, že vám nejde Docker nainštalovať, môžete využiť online skúšobné prostredie: [Docker playground](https://labs.play-with-docker.com/). Toto prostredie umožnuje spustiť docker image, pričom jedno sedenie môže trvať maximálne 4 hodiny. 
-
+	V prípade, že vám nejde Docker nainštalovať, môžete využiť online skúšobné prostredie: [Docker playground](https://labs.play-with-docker.com/). Toto prostredie umožňuje spustiť docker image, pričom jedno sedenie môže trvať maximálne 4 hodiny.
+    Pri využití tejto možnosti si treba zmeniť v príklade všetky `localhost` adresy za adresu virtuálneho servera na ktorom beží docker image.  **Táto adresa je dočasná a je platná iba počas 4 hodinovej session. Prikaždom spustení novej session sa vygeneruje nová adresa**
+	
+	![](images/Screenshot_20200511_133655.png#center)
+	Príklad adresy swagger:`http://ip172-18-0-131-bqsjeliosm4g00fisf3g-9000.direct.labs.play-with-docker.com/swagger`
 
 
 ### Stiahnutie obrazu webovej služby
