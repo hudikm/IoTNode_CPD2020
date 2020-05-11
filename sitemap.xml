@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://squidfunk.github.io/mkdocs-material/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/postup/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/bonus/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/RESTapi/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/web_services/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/maven/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/git/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://squidfunk.github.io/mkdocs-material/intelij_git/</loc>
-     <lastmod>2020-05-05</lastmod>
+     <lastmod>2020-05-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
