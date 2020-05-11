@@ -53,10 +53,16 @@ Samotná webová služba je napísaná v Java jazyku s využitím Dropwizzard fr
 - [Linux](https://docs.docker.com/engine/install/#server)
 - [Mac](https://docs.docker.com/docker-for-mac/install/)
 
+!!! tip
+	V prípade, že vám nejde Docker nainštalovať, môžete využiť online skúšobné prostredie: [Docker playground](https://labs.play-with-docker.com/). Toto prostredie umožnuje spustiť docker image, pričom jedno sedenie môže trvať maximálne 4 hodiny. 
+
+
+
 ### Stiahnutie obrazu webovej služby
+
 V príkazovom riadku zadajte:
 ```bash
-docker pull hudikm/dropwizard-weathers
+docker pull hudikm/dropwizard-weatherstation
 ```
 
 ### Spustenie služby
