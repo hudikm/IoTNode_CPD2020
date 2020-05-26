@@ -108,10 +108,16 @@ markdown_extensions:
 nav:
   - Úloha:
     - Zadanie I: 
-      - Zadanie: index.md
+      - Úvod: index.md
       - Postup prác: postup.md
+      - Úloha: postup/#uloha-na-dopracovanie
       - Dobrovolná úloha: bonus.md
       - Dokumentácia k REST API: RESTapi.md
+    - Zadanie II: 
+      - Úvod: uvod_2.md
+      - Postup prác: uloha2.md
+      - Úloha: zadanie2.md
+      - Dobrovolná úloha: zadanie2/#dobrovolna-uloha
     - Teória:
       - Webové služby: web_services.md
       - Maven: maven.md
